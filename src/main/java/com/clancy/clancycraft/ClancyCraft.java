@@ -1,6 +1,8 @@
 package com.clancy.clancycraft;
 
 import com.clancy.clancycraft.items.ClancyCraftItems;
+import com.clancy.clancycraft.world.biome.TestBiome;
+import com.clancy.clancycraft.world.dimenesion.ClancyCraftDimensions;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -32,6 +34,9 @@ public class ClancyCraft
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ClancyCraftItems.register(eventBus);
+        ClancyCraftDimensions.register();
+        TestBiome.registerBiomes();
+
 
 
 
