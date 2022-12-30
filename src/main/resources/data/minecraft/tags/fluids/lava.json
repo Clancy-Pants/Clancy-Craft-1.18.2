@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "clancycraft:molten_nuggetiem_fluid",
+    "clancycraft:molten_nuggetiem_flowing",
+
+    "clancycraft:molten_magnite_fluid",
+    "clancycraft:molten_magnite_flowing",
+
+    "clancycraft:liquid_light_fluid",
+    "clancycraft:liquid_light_flowing",
+
+    "clancycraft:molten_dark_metal_fluid",
+    "clancycraft:molten_dark_metal_flowing",
+
+    "clancycraft:molten_light_metal_fluid",
+    "clancycraft:molten_light_metal_flowing"
+  ]
+}

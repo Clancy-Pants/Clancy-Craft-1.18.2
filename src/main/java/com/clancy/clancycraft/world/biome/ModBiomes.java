@@ -7,7 +7,7 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeManager;
 
-public class TestBiome {
+public class ModBiomes {
     public static final ResourceKey<Biome> TEST_BIOME = ResourceKey.create(Registry.BIOME_REGISTRY,
             new ResourceLocation("clancycraft", "test_biome"));
 

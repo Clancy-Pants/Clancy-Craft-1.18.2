@@ -1,9 +1,14 @@
 package com.clancy.clancycraft;
 
+import com.clancy.clancycraft.blocks.ModBlocks;
 import com.clancy.clancycraft.items.ClancyCraftItems;
-import com.clancy.clancycraft.world.biome.TestBiome;
+import com.clancy.clancycraft.liquid.ModFluids;
+import com.clancy.clancycraft.world.biome.ModBiomes;
 import com.clancy.clancycraft.world.dimenesion.ClancyCraftDimensions;
+import com.clancy.clancycraft.world.dimenesion.portals.ModPOIS;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -12,6 +17,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
@@ -34,12 +40,17 @@ public class ClancyCraft
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ClancyCraftItems.register(eventBus);
+        ModBlocks.register(eventBus);
         ClancyCraftDimensions.register();
-        TestBiome.registerBiomes();
+        ModFluids.register(eventBus);
+
+        ModBiomes.registerBiomes();
+
+        ModPOIS.register(eventBus);
 
 
 
-
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
@@ -50,7 +61,29 @@ public class ClancyCraft
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
+    private void clientSetup(final FMLClientSetupEvent event) {
 
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_NUGGETIEM_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_NUGGETIEM_FLUID.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_NUGGETIEM_FLOWING.get(), RenderType.translucent());
+
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_MAGNITE_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_MAGNITE_FLUID.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_MAGNITE_FLOWING.get(), RenderType.translucent());
+
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.LIQUID_LIGHT_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.LIQUID_LIGHT_FLUID.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.LIQUID_LIGHT_FLOWING.get(), RenderType.translucent());
+
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_DARK_METAL_BLOCK.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_DARK_METAL_FLUID.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_DARK_METAL_FLOWING.get(), RenderType.solid());
+
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_BLOCK.get(), RenderType.solid());
+ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_FLUID.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_FLOWING.get(), RenderType.solid());
+
+    }
     private void setup(final FMLCommonSetupEvent event)
     {
         // some preinit code
