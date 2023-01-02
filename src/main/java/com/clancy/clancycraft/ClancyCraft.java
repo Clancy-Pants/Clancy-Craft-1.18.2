@@ -3,12 +3,14 @@ package com.clancy.clancycraft;
 import com.clancy.clancycraft.blocks.ModBlocks;
 import com.clancy.clancycraft.items.ClancyCraftItems;
 import com.clancy.clancycraft.liquid.ModFluids;
-import com.clancy.clancycraft.world.biome.ModBiomes;
+import com.clancy.clancycraft.world.biome.ModRegions;
+import com.clancy.clancycraft.world.biome.ModSurfaceRuleData;
 import com.clancy.clancycraft.world.dimenesion.ClancyCraftDimensions;
 import com.clancy.clancycraft.world.dimenesion.portals.ModPOIS;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -24,6 +26,8 @@ import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import terrablender.api.Regions;
+import terrablender.api.SurfaceRuleManager;
 
 import java.util.stream.Collectors;
 
@@ -44,7 +48,6 @@ public class ClancyCraft
         ClancyCraftDimensions.register();
         ModFluids.register(eventBus);
 
-        ModBiomes.registerBiomes();
 
         ModPOIS.register(eventBus);
 
@@ -80,7 +83,7 @@ public class ClancyCraft
         ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_DARK_METAL_FLOWING.get(), RenderType.solid());
 
         ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_BLOCK.get(), RenderType.solid());
-ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_FLUID.get(), RenderType.solid());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_FLUID.get(), RenderType.solid());
         ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_FLOWING.get(), RenderType.solid());
 
     }
@@ -93,6 +96,14 @@ ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_FLUID.get(), Re
 
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
+        event.enqueueWork(() ->
+        {
+            // Given we only add two biomes, we should keep our weight relatively low.
+            Regions.register(new ModRegions(new ResourceLocation(MOD_ID, "overworld"), 2));
+
+            // Register our surface rules
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRuleData.makeRules());
+        });
         // Some example code to dispatch IMC to another mod
         InterModComms.sendTo("examplemod", "helloworld", () -> { LOGGER.info("Hello world from the MDK"); return "Hello world";});
     }

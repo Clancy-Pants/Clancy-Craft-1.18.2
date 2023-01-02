@@ -1,21 +1,23 @@
 package com.clancy.clancycraft.world.biome;
 
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.biome.Biome;
-import net.minecraftforge.common.BiomeDictionary;
-import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.IForgeRegistry;
 
-public class ModBiomes {
-    public static final ResourceKey<Biome> TEST_BIOME = ResourceKey.create(Registry.BIOME_REGISTRY,
-            new ResourceLocation("clancycraft", "test_biome"));
-
-    public static void registerBiomes() {
-        BiomeDictionary.addTypes(TEST_BIOME, BiomeDictionary.Type.FOREST);
-        BiomeManager.addAdditionalOverworldBiomes(TEST_BIOME);
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+public class ModBiomes
+{
+    @SubscribeEvent
+    public static void registerBiomes(RegistryEvent.Register<Biome> event)
+    {
+        IForgeRegistry<Biome> registry = event.getRegistry();
+        registry.register(DimensionBiomes.volcanic_wastelands().setRegistryName(ModBiomeRegistry.VOLCANIC_WASTELANDS.location()));
+        registry.register(DimensionBiomes.rainbow_forrest().setRegistryName(ModBiomeRegistry.RAINBOW_FORREST.location()));
+        registry.register(DimensionBiomes.artic().setRegistryName(ModBiomeRegistry.ARTIC.location()));
+        registry.register(DimensionBiomes.dark_jungle().setRegistryName(ModBiomeRegistry.DARK_JUNGLE.location()));
+        registry.register(DimensionBiomes.infested_plains().setRegistryName(ModBiomeRegistry.INFESTED_PLAINS.location()));
     }
-
-
 }
 

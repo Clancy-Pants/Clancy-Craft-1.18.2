@@ -2,11 +2,72 @@
   "type": "clancycraft:clancy",
   "generator": {
     "type": "minecraft:noise",
-    "seed": -485105919,
+    "seed": 1132954554,
     "settings": "minecraft:overworld",
     "biome_source": {
-      "type": "minecraft:fixed",
-      "biome": "clancycraft:test_biome"
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "clancycraft:volcanic_wasteland",
+          "parameters": {
+            "temperature": 0.2,
+            "humidity": 0.2,
+            "continentalness": 0.2,
+            "erosion": 0.2,
+            "weirdness": 0.2,
+            "depth": 0.2,
+            "offset": 0.2
+          }
+        },
+        {
+          "biome": "clancycraft:rainbow_forrest",
+          "parameters": {
+            "temperature": 0.1,
+            "humidity": 0.1,
+            "continentalness": 0.1,
+            "erosion": 0.1,
+            "weirdness": 0.1,
+            "depth": 0.1,
+            "offset": 0.1
+          }
+        },
+        {
+          "biome": "clancycraft:artic",
+          "parameters": {
+            "temperature": 0.5,
+            "humidity": 0.5,
+            "continentalness": 0.5,
+            "erosion": 0.5,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "clancycraft:dark_jungle",
+          "parameters": {
+            "temperature": 0.3,
+            "humidity": 0.3,
+            "continentalness": 0.3,
+            "erosion": 0.3,
+            "weirdness": 0.3,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "clancycraft:infested_plains",
+          "parameters": {
+            "temperature": 0.4,
+            "humidity": 0.4,
+            "continentalness": 0.4,
+            "erosion": 0.4,
+            "weirdness": 0.4,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
     }
   }
 }
