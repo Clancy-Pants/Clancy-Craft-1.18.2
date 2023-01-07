@@ -1,7 +1,7 @@
 {
   "textures": {
     "particle": "clancycraft:block/clancy_portal",
-    "portal": "tutorialmod:block/clancy_portal"
+    "portal": "clancycraft:block/clancy_portal"
   },
   "elements": [
     {   "from": [ 6, 0, 0 ],

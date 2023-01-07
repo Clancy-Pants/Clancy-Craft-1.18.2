@@ -1,0 +1,29 @@
+{
+  "block.clancycraft.citrine_block": "Portal Block",
+
+  "block.clancycraft.nuggetiem_ore": "Nuggetiem Ore",
+  "block.clancycraft.magnite_ore": "Magnite Ore",
+  "block.clancycraft.black_metal_ore": "Black Metal Ore",
+  "block.clancycraft.shards_of_light": "Shards Of Light",
+
+  "item.clancycraft.light_metal_ingot": "Light Metal Ingot",
+  "item.clancycraft.dark_metal_ingot": "Black Metal Ingot",
+  "item.clancycraft.bar_of_light": "Bar Of Light",
+  "item.clancycraft.nuggetiem_ingot": "Nuggetiem Ingot",
+  "item.clancycraft.magnite_ingot": "Magnite Ingot",
+
+  "item.clancycraft.light_metal_nugget": "Light Metal Nugget",
+  "item.clancycraft.dark_metal_nugget": "Black Metal Nugget",
+  "item.clancycraft.light_nugget": "Light Nugget",
+  "item.clancycraft.magnite_nugget": "Magnite Nugget",
+  "item.clancycraft.nuggetiem_nugget": "Nuggetiem Nugget",
+
+  "item.clancycraft.liquid_light_bucket": "Liquid Light",
+  "item.clancycraft.molten_light_metal_bucket": "Molten Light Metal",
+  "item.clancycraft.molten_dark_metal_bucket": "Molten Dark Metal",
+  "item.clancycraft.molten_magnite_bucket": "Molten Magnite",
+  "item.clancycraft.molten_nuggetiem_bucket": "Molten Nuggetiem",
+
+  "item.clancycraft.citrine": "Portal Lighter"
+
+}
