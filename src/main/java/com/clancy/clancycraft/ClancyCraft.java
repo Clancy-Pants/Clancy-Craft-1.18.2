@@ -65,7 +65,7 @@ public class ClancyCraft
         MinecraftForge.EVENT_BUS.register(this);
     }
     private void clientSetup(final FMLClientSetupEvent event) {
-
+//METALS
         ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_NUGGETIEM_BLOCK.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_NUGGETIEM_FLUID.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_NUGGETIEM_FLOWING.get(), RenderType.translucent());
@@ -85,6 +85,10 @@ public class ClancyCraft
         ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_BLOCK.get(), RenderType.solid());
         ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_FLUID.get(), RenderType.solid());
         ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_FLOWING.get(), RenderType.solid());
+
+        //LEAVES
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAINBOW_LEAVES.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAINBOW_SAPLING.get(), RenderType.cutout());
 
     }
     private void setup(final FMLCommonSetupEvent event)

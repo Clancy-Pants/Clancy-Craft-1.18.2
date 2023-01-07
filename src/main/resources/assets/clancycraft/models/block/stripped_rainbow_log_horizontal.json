@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "clancycraft:block/stripped_rainbow_top",
+    "side": "clancycraft:block/stripped_rainbow_log"
+  }
+}

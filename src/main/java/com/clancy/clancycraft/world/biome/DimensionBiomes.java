@@ -1,5 +1,7 @@
 package com.clancy.clancycraft.world.biome;
 
+import com.clancy.clancycraft.world.feature.ModConfigredFeatures;
+import com.clancy.clancycraft.world.feature.ModPlacedFeatures;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.sounds.Music;
 import net.minecraft.util.Mth;
@@ -75,7 +77,8 @@ public class DimensionBiomes {
         BiomeDefaultFeatures.addDefaultSoftDisks(biomeBuilder);
         BiomeDefaultFeatures.addDefaultFlowers(biomeBuilder);
         BiomeDefaultFeatures.addDefaultGrass(biomeBuilder);
-        BiomeDefaultFeatures.addBirchTrees(biomeBuilder);
+        ModConfigredFeatures.addRainbowTrees(biomeBuilder);
+
 
 
         return biome(Biome.Precipitation.RAIN, Biome.BiomeCategory.FOREST, 2.0F, 0.0F, spawnBuilder,
