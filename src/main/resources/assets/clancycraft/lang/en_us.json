@@ -1,6 +1,12 @@
 {
   "block.clancycraft.citrine_block": "Portal Block",
 
+  "block.clancycraft.light_metal_block": "Block Of Light Metal",
+  "block.clancycraft.black_metal_block": "Block Of Black Metal",
+  "block.clancycraft.light_block": "Block Of Light",
+  "block.clancycraft.magnite_block": "Block Of Magnite",
+  "block.clancycraft.nuggetiem_block": "Block Of Nuggetiem",
+
   "block.clancycraft.nuggetiem_ore": "Nuggetiem Ore",
   "block.clancycraft.magnite_ore": "Magnite Ore",
   "block.clancycraft.black_metal_ore": "Black Metal Ore",

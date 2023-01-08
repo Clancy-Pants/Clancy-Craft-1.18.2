@@ -38,6 +38,26 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
 
+    public static final RegistryObject<Block> NUGGETIEM_BLOCK = registerBlock("nuggetiem_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
+
+    public static final RegistryObject<Block> MAGNITE_BLOCK = registerBlock("magnite_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
+
+    public static final RegistryObject<Block> LIGHT_BLOCK = registerBlock("light_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
+
+    public static final RegistryObject<Block> BLACK_METAL_BLOCK = registerBlock("black_metal_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
+
+    public static final RegistryObject<Block> LIGHT_METAL_BLOCK = registerBlock("light_metal_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
+
     //ores
     public static final RegistryObject<Block> NUGGETIEM_ORE = registerBlock("nuggetiem_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "clancycraft:block/black_metal_block"
+  }
+}
