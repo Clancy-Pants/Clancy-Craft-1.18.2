@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "clancycraft:item/raw_black_metal"
+  }
+}

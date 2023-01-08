@@ -72,6 +72,22 @@ public class ClancyCraftItems {
             () -> new BucketItem(ModFluids.MOLTEN_LIGHT_METAL_FLUID,
                     new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB).stacksTo(1)));
 
+    //raw metals
+
+
+
+    public static final RegistryObject<Item> RAW_BLACK_METAL = ITEMS.register("raw_black_metal",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
+    public static final RegistryObject<Item> LIGHT_SHARDS = ITEMS.register("light_shards",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
+    public static final RegistryObject<Item> RAW_NUGGETIEM = ITEMS.register("raw_nuggetiem",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
+    public static final RegistryObject<Item> RAW_MAGNITE = ITEMS.register("raw_magnite",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
 
 
 
