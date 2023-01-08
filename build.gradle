@@ -153,6 +153,7 @@ repositories {
         name 'DVS1 Maven FS'
         url 'https://dvs1.progwml6.com/files/maven'
     }
+    maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
     // Put repositories for dependencies here
     // ForgeGradle automatically adds the Forge maven and Maven Central for you
 
@@ -169,6 +170,7 @@ dependencies {
     compileOnly fg.deobf("slimeknights.mantle:Mantle:${minecraft_version}-${mantle_build}")
     compileOnly fg.deobf("slimeknights.tconstruct:TConstruct:${minecraft_version}-${tinkers_build}")
     implementation fg.deobf('com.github.glitchfiend:TerraBlender-forge:1.18.2-1.2.0.126')
+    implementation fg.deobf('software.bernie.geckolib:geckolib-1.18-forge:3.0.13')
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft', it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
