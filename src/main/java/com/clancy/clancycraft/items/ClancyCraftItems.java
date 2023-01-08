@@ -2,7 +2,10 @@ package com.clancy.clancycraft.items;
 
 import com.clancy.clancycraft.ClancyCraft;
 import com.clancy.clancycraft.items.custom.PortalLighter;
+import com.clancy.clancycraft.items.custom.armor.ModArmorMaterials;
+import com.clancy.clancycraft.items.custom.armor.NuggetiemArmourItem;
 import com.clancy.clancycraft.liquid.ModFluids;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -88,6 +91,19 @@ public class ClancyCraftItems {
     public static final RegistryObject<Item> RAW_MAGNITE = ITEMS.register("raw_magnite",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
 
+    // ARMOR SETS
+    public static final RegistryObject<Item> NUGGETIEM_HELMET = ITEMS.register("nuggetiem_helmet",
+            () -> new NuggetiemArmourItem(ModArmorMaterials.NUGGETIEM, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> NUGGETIEM_CHESTPLATE = ITEMS.register("nuggetiem_chestplate",
+            () -> new NuggetiemArmourItem(ModArmorMaterials.NUGGETIEM, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> NUGGETIEM_LEGGING = ITEMS.register("nuggetiem_leggings",
+            () -> new NuggetiemArmourItem(ModArmorMaterials.NUGGETIEM, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> NUGGETIEM_BOOTS = ITEMS.register("nuggetiem_boots",
+            () -> new NuggetiemArmourItem(ModArmorMaterials.NUGGETIEM, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
 
 
 
