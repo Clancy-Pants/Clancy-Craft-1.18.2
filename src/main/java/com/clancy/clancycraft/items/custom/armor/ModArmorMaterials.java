@@ -13,8 +13,8 @@ import java.util.function.Supplier;
 
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    NUGGETIEM("nuggetiem", 28, new int[]{2, 5, 8, 3}, 19, SoundEvents.ARMOR_EQUIP_GOLD,
-            2.0F, 0.0F, () -> Ingredient.of(ClancyCraftItems.NUGGETIEM_INGOT.get()));
+    NUGGETIEM("nuggetiem", 28, new int[]{4, 7, 9, 4}, 15, SoundEvents.ARMOR_EQUIP_GOLD,
+            2.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.NUGGETIEM_INGOT.get()));
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;

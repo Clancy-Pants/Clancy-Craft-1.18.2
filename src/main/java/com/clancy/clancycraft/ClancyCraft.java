@@ -1,6 +1,9 @@
 package com.clancy.clancycraft;
 
 import com.clancy.clancycraft.blocks.ModBlocks;
+import com.clancy.clancycraft.datagen.ClancyCraftBlockTags;
+import com.clancy.clancycraft.datagen.ClancyCraftItemTags;
+import com.clancy.clancycraft.datagen.tink.*;
 import com.clancy.clancycraft.items.ClancyCraftItems;
 import com.clancy.clancycraft.liquid.ModFluids;
 import com.clancy.clancycraft.world.biome.ModRegions;
@@ -8,12 +11,17 @@ import com.clancy.clancycraft.world.biome.ModSurfaceRuleData;
 import com.clancy.clancycraft.world.dimenesion.ClancyCraftDimensions;
 import com.clancy.clancycraft.world.dimenesion.portals.ModPOIS;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,7 +33,14 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import org.slf4j.Logger;
+import slimeknights.tconstruct.library.client.data.material.AbstractMaterialSpriteProvider;
+import slimeknights.tconstruct.library.client.data.material.MaterialPartTextureGenerator;
+import slimeknights.tconstruct.library.client.model.tools.ToolModel;
+import slimeknights.tconstruct.library.data.material.AbstractMaterialDataProvider;
+import slimeknights.tconstruct.tools.data.sprite.TinkerMaterialSpriteProvider;
+import slimeknights.tconstruct.tools.data.sprite.TinkerPartSpriteProvider;
 import terrablender.api.Regions;
 import terrablender.api.SurfaceRuleManager;
 
@@ -49,7 +64,9 @@ public class ClancyCraft
         ModFluids.register(eventBus);
 
 
+
         ModPOIS.register(eventBus);
+
 
 
 
@@ -63,6 +80,32 @@ public class ClancyCraft
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+    }
+
+
+    @SubscribeEvent
+    public static void gatherData(final GatherDataEvent event) {
+        DataGenerator gen = event.getGenerator();
+        ExistingFileHelper fileHelper = event.getExistingFileHelper();
+        if (event.includeServer()) {
+            gen.addProvider(new ModToolDefinitionProvider(gen));
+            gen.addProvider(new ModToolSlotLayout(gen));
+            gen.addProvider(new ClancyCraftRecipes(gen));
+            ClancyCraftBlockTags tags = new ClancyCraftBlockTags(gen, fileHelper);
+            gen.addProvider(tags);
+            gen.addProvider(new ClancyCraftItemTags(gen, tags, fileHelper));
+
+        }
+        if(event.includeClient()) {
+            AbstractMaterialSpriteProvider provider = new MaterialSpriteProvider();
+            AbstractMaterialSpriteProvider tinkersProvider = new TinkerMaterialSpriteProvider();
+            gen.addProvider(new MaterialPartTextureGenerator(gen, fileHelper, new TinkerPartSpriteProvider(), provider));
+            gen.addProvider(new MaterialPartTextureGenerator(gen, fileHelper, new ClancyCraftPartSpriteProvider(), provider));
+            gen.addProvider(new MaterialPartTextureGenerator(gen, fileHelper, new ClancyCraftPartSpriteProvider(), tinkersProvider));
+
+        }
+
+
     }
     private void clientSetup(final FMLClientSetupEvent event) {
 //METALS
@@ -138,6 +181,19 @@ public class ClancyCraft
         {
             // Register a new block here
             LOGGER.info("HELLO from Register Block");
+        }
+    }
+
+    @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = MOD_ID, value = Dist.CLIENT)
+    public static class ClancyCraftReforgedClient {
+        public @SubscribeEvent
+        static void itemColors(ColorHandlerEvent.Item event) {
+            final ItemColors colors = event.getItemColors();
+
+            ToolModel.registerItemColors(colors, ClancyCraftItems.KATANA);
+            ToolModel.registerItemColors(colors, ClancyCraftItems.WARHAMMER);
+            ToolModel.registerItemColors(colors, ClancyCraftItems.HALBERD);
+            ToolModel.registerItemColors(colors, ClancyCraftItems.BATTLEAXE);
         }
     }
 }

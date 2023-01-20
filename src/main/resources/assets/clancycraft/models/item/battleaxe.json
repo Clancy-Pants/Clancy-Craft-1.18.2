@@ -1,0 +1,13 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "head":        "clancycraft:item/tool/battleaxe/blade",
+    "handle":      "clancycraft:item/tool/battleaxe/handle"
+  },
+  "modifier_roots": [ "tconstruct:item/tool/battleaxe/modifiers/" ],
+  "parts": [
+    { "name": "handle",  "index": 1 },
+    { "name": "head",    "index": 0}
+  ]
+}

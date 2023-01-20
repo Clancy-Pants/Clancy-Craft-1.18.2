@@ -1,18 +1,20 @@
 package com.clancy.clancycraft.items;
 
 import com.clancy.clancycraft.ClancyCraft;
+import com.clancy.clancycraft.init.ModToolDefinitions;
 import com.clancy.clancycraft.items.custom.PortalLighter;
 import com.clancy.clancycraft.items.custom.armor.ModArmorMaterials;
 import com.clancy.clancycraft.items.custom.armor.NuggetiemArmourItem;
 import com.clancy.clancycraft.liquid.ModFluids;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.BucketItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import slimeknights.tconstruct.library.tools.item.ModifiableItem;
+import slimeknights.tconstruct.tools.item.ModifiableSwordItem;
 
 public class ClancyCraftItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -104,6 +106,22 @@ public class ClancyCraftItems {
     public static final RegistryObject<Item> NUGGETIEM_BOOTS = ITEMS.register("nuggetiem_boots",
             () -> new NuggetiemArmourItem(ModArmorMaterials.NUGGETIEM, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
+
+
+    //wepons//
+    private static final Item.Properties TOOL = new Item.Properties().stacksTo(1).tab(ModCreativeModeTab.CLANCY_TAB);
+
+    public static final RegistryObject<ModifiableItem> KATANA = ITEMS.register("katana",
+            () -> new ModifiableItem(TOOL, ModToolDefinitions.KATANA));
+
+    public static final RegistryObject<ModifiableItem> WARHAMMER = ITEMS.register("warhammer",
+            () -> new ModifiableItem(TOOL, ModToolDefinitions.WARHAMMER));
+    public static final RegistryObject<ModifiableItem> HALBERD = ITEMS.register("halberd",
+            () -> new ModifiableItem(TOOL, ModToolDefinitions.HALBERD));
+    public static final RegistryObject<ModifiableItem> BATTLEAXE = ITEMS.register("battleaxe",
+            () -> new ModifiableItem(TOOL, ModToolDefinitions.BATTLEAXE));
+
 
 
 

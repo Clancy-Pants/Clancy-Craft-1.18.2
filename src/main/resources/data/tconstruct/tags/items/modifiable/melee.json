@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "clancycraft:katana",
+    "clancycraft:warhammer",
+    "clancycraft:halberd",
+    "clancycraft:battleaxe"
+  ]
+}
