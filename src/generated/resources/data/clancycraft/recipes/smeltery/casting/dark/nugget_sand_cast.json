@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/single_use/nugget"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "forge:dark",
+    "amount": 10
+  },
+  "result": "clancycraft:dark_metal_nugget",
+  "cooling_time": 19
+}

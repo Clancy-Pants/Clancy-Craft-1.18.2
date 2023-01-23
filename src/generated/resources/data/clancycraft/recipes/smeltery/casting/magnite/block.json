@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "tag": "clancycraft:magnite",
+    "amount": 810
+  },
+  "result": "clancycraft:magnite_block",
+  "cooling_time": 171
+}

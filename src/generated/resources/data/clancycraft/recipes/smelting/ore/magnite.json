@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:ores/magnite"
+  },
+  "result": "clancycraft:raw_magnite",
+  "experience": 0.0,
+  "cookingtime": 200
+}

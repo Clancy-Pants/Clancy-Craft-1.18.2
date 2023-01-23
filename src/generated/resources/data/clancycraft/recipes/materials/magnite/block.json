@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/magnite",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/magnite"
+  },
+  "value": 9,
+  "needed": 1,
+  "material": "clancycraft:magnite",
+  "leftover": {
+    "tag": "forge:ingots/magnite"
+  }
+}

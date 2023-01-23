@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "clancycraft:nuggetiem_block",
+    "clancycraft:magnite_block",
+    "clancycraft:light_block",
+    "clancycraft:black_metal_block",
+    "clancycraft:light_metal_block"
+  ]
+}

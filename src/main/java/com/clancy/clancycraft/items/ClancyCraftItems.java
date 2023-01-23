@@ -57,25 +57,9 @@ public class ClancyCraftItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
 
     //Molten Metal
-    public static final RegistryObject<Item> MOLTEN_NUGGETIEM_BUCKET = ITEMS.register("molten_nuggetiem_bucket",
-            () -> new BucketItem(ModFluids.MOLTEN_NUGGETIEM_FLUID,
-                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB).stacksTo(1)));
 
-    public static final RegistryObject<Item> MOLTEN_MAGNITE_BUCKET = ITEMS.register("molten_magnite_bucket",
-            () -> new BucketItem(ModFluids.MOLTEN_MAGNITE_FLUID,
-                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB).stacksTo(1)));
 
-    public static final RegistryObject<Item> LIQUID_LIGHT_BUCKET = ITEMS.register("liquid_light_bucket",
-            () -> new BucketItem(ModFluids.LIQUID_LIGHT_FLUID,
-                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB).stacksTo(1)));
 
-    public static final RegistryObject<Item> MOLTEN_DARK_METAL_BUCKET = ITEMS.register("molten_dark_metal_bucket",
-            () -> new BucketItem(ModFluids.MOLTEN_DARK_METAL_FLUID,
-                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB).stacksTo(1)));
-
-    public static final RegistryObject<Item> MOLTEN_LIGHT_METAL_BUCKET = ITEMS.register("molten_light_metal_bucket",
-            () -> new BucketItem(ModFluids.MOLTEN_LIGHT_METAL_FLUID,
-                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB).stacksTo(1)));
 
     //raw metals
 

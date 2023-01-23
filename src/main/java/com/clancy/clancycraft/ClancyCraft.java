@@ -1,8 +1,7 @@
 package com.clancy.clancycraft;
 
 import com.clancy.clancycraft.blocks.ModBlocks;
-import com.clancy.clancycraft.datagen.ClancyCraftBlockTags;
-import com.clancy.clancycraft.datagen.ClancyCraftItemTags;
+import com.clancy.clancycraft.datagen.*;
 import com.clancy.clancycraft.datagen.tink.*;
 import com.clancy.clancycraft.items.ClancyCraftItems;
 import com.clancy.clancycraft.liquid.ModFluids;
@@ -46,6 +45,8 @@ import terrablender.api.SurfaceRuleManager;
 
 import java.util.stream.Collectors;
 
+import static com.clancy.clancycraft.liquid.ModFluids.*;
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ClancyCraft.MOD_ID)
 public class ClancyCraft
@@ -57,15 +58,17 @@ public class ClancyCraft
     public ClancyCraft()
     {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        ClancyCraftItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ClancyCraftItems.register(eventBus);
+        FLUIDS.register(eventBus);
         ClancyCraftDimensions.register();
-        ModFluids.register(eventBus);
+
+
 
 
 
         ModPOIS.register(eventBus);
+
 
 
 
@@ -83,51 +86,8 @@ public class ClancyCraft
     }
 
 
-    @SubscribeEvent
-    public static void gatherData(final GatherDataEvent event) {
-        DataGenerator gen = event.getGenerator();
-        ExistingFileHelper fileHelper = event.getExistingFileHelper();
-        if (event.includeServer()) {
-            gen.addProvider(new ModToolDefinitionProvider(gen));
-            gen.addProvider(new ModToolSlotLayout(gen));
-            gen.addProvider(new ClancyCraftRecipes(gen));
-            ClancyCraftBlockTags tags = new ClancyCraftBlockTags(gen, fileHelper);
-            gen.addProvider(tags);
-            gen.addProvider(new ClancyCraftItemTags(gen, tags, fileHelper));
-
-        }
-        if(event.includeClient()) {
-            AbstractMaterialSpriteProvider provider = new MaterialSpriteProvider();
-            AbstractMaterialSpriteProvider tinkersProvider = new TinkerMaterialSpriteProvider();
-            gen.addProvider(new MaterialPartTextureGenerator(gen, fileHelper, new TinkerPartSpriteProvider(), provider));
-            gen.addProvider(new MaterialPartTextureGenerator(gen, fileHelper, new ClancyCraftPartSpriteProvider(), provider));
-            gen.addProvider(new MaterialPartTextureGenerator(gen, fileHelper, new ClancyCraftPartSpriteProvider(), tinkersProvider));
-
-        }
-
-
-    }
     private void clientSetup(final FMLClientSetupEvent event) {
 //METALS
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_NUGGETIEM_BLOCK.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_NUGGETIEM_FLUID.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_NUGGETIEM_FLOWING.get(), RenderType.translucent());
-
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_MAGNITE_BLOCK.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_MAGNITE_FLUID.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_MAGNITE_FLOWING.get(), RenderType.translucent());
-
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.LIQUID_LIGHT_BLOCK.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.LIQUID_LIGHT_FLUID.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.LIQUID_LIGHT_FLOWING.get(), RenderType.translucent());
-
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_DARK_METAL_BLOCK.get(), RenderType.solid());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_DARK_METAL_FLUID.get(), RenderType.solid());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_DARK_METAL_FLOWING.get(), RenderType.solid());
-
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_BLOCK.get(), RenderType.solid());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_FLUID.get(), RenderType.solid());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_LIGHT_METAL_FLOWING.get(), RenderType.solid());
 
         //LEAVES
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAINBOW_LEAVES.get(), RenderType.cutout());

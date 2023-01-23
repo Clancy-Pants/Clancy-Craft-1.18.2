@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/lightmetal",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/lightmetal"
+  },
+  "value": 9,
+  "needed": 1,
+  "material": "clancycraft:lightmetal",
+  "leftover": {
+    "tag": "forge:ingots/lightmetal"
+  }
+}

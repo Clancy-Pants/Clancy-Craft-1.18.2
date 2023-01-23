@@ -1,0 +1,24 @@
+{
+  "type": "tconstruct:casting_table",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:wires/dark",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "cast": {
+    "tag": "tconstruct:casts/single_use/wire"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "forge:dark",
+    "amount": 45
+  },
+  "result": {
+    "tag": "forge:wires/dark"
+  },
+  "cooling_time": 40
+}

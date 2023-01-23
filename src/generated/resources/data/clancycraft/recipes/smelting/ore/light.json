@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:ores/light"
+  },
+  "result": "clancycraft:light_shards",
+  "experience": 0.0,
+  "cookingtime": 200
+}

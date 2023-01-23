@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:ores/dark"
+  },
+  "result": {
+    "fluid": "clancycraft:dark",
+    "amount": 180
+  },
+  "temperature": 1000,
+  "time": 30
+}

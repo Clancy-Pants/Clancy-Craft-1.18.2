@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "forge:ores/dark"
+  },
+  "result": "clancycraft:raw_black_metal",
+  "experience": 0.5,
+  "cookingtime": 100
+}

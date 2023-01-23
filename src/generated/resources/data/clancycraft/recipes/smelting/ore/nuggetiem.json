@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "forge:ores/nuggetiem"
+  },
+  "result": "clancycraft:raw_nuggetiem",
+  "experience": 0.0,
+  "cookingtime": 200
+}

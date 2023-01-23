@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:rods/lightmetal",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:rods/lightmetal"
+  },
+  "result": {
+    "fluid": "clancycraft:lightmetal",
+    "amount": 45
+  },
+  "temperature": 700,
+  "time": 11
+}

@@ -1,0 +1,23 @@
+{
+  "type": "tconstruct:casting_table",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:wires/nuggetiem",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/wire"
+  },
+  "fluid": {
+    "tag": "clancycraft:nuggetiem",
+    "amount": 45
+  },
+  "result": {
+    "tag": "forge:wires/nuggetiem"
+  },
+  "cooling_time": 40
+}

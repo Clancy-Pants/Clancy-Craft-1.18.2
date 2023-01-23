@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "clancycraft:magnite",
+  "temperature": 700,
+  "result": {
+    "fluid": "clancycraft:magnite",
+    "amount": 90
+  }
+}
