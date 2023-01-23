@@ -25,9 +25,10 @@ public class ModToolDefinitionProvider extends AbstractToolDefinitionDataProvide
                 .part(toolHandle)
                 .part(toolHandle)
                 // stats
-                .stat(ToolStats.ATTACK_DAMAGE, 4f)
-                .stat(ToolStats.ATTACK_SPEED, 0.75f)
+                .stat(ToolStats.ATTACK_DAMAGE, 3f)
+                .stat(ToolStats.ATTACK_SPEED, 1.6f)
                 .multiplier(ToolStats.MINING_SPEED, 0.5f)
+                .multiplier(ToolStats.ATTACK_SPEED, 0.5f)
                 .multiplier(ToolStats.DURABILITY, 1.1f)
                 .largeToolStartingSlots()
                 // traits
@@ -40,14 +41,13 @@ public class ModToolDefinitionProvider extends AbstractToolDefinitionDataProvide
                 .part(toughHandle)
                 .part(toughHandle)
                 // stats
-                .stat(ToolStats.ATTACK_DAMAGE, 4f)
+                .stat(ToolStats.ATTACK_DAMAGE, 5f)
                 .stat(ToolStats.ATTACK_SPEED, 0.75f)
                 .multiplier(ToolStats.MINING_SPEED, 0.5f)
                 .multiplier(ToolStats.DURABILITY, 1.1f)
                 .largeToolStartingSlots()
                 // traits
-                .trait(TinkerModifiers.knockback)
-                .trait(TinkerModifiers.fiery);
+                .trait(TinkerModifiers.knockback);
 
         define(ModToolDefinitions.HALBERD)
                 // parts
@@ -64,8 +64,7 @@ public class ModToolDefinitionProvider extends AbstractToolDefinitionDataProvide
                 .largeToolStartingSlots()
                 // traits
                 .trait(TinkerModifiers.knockback)
-                .trait(TinkerModifiers.lacerating)
-                .trait(TinkerModifiers.axeStrip);
+                .trait(TinkerModifiers.lacerating);
 
         define(ModToolDefinitions.BATTLEAXE)
                 // parts
@@ -75,15 +74,14 @@ public class ModToolDefinitionProvider extends AbstractToolDefinitionDataProvide
                 .part(toughHandle)
                 .part(toughHandle)
                 // stats
-                .stat(ToolStats.ATTACK_DAMAGE, 4f)
+                .stat(ToolStats.ATTACK_DAMAGE, 5f)
                 .stat(ToolStats.ATTACK_SPEED, 0.75f)
                 .multiplier(ToolStats.MINING_SPEED, 0.5f)
                 .multiplier(ToolStats.DURABILITY, 1.1f)
                 .largeToolStartingSlots()
                 // traits
                 .trait(TinkerModifiers.knockback)
-                .trait(TinkerModifiers.necrotic)
-                .trait(TinkerModifiers.axeStrip);
+                .trait(TinkerModifiers.necrotic);
     }
     @Nonnull
     @Override
