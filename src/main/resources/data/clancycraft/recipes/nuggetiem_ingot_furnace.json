@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "clancycraft:raw_nuggetiem"
-  },
-  "result": "clancycraft:nuggetiem_ingot",
-  "experience": 0.0,
-  "cookingtime": 200
-}

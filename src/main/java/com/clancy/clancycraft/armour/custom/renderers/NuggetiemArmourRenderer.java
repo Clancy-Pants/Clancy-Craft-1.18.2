@@ -1,5 +1,8 @@
-package com.clancy.clancycraft.armour.custom;
+package com.clancy.clancycraft.armour.custom.renderers;
 
+import com.clancy.clancycraft.armour.custom.MagniteArmour;
+import com.clancy.clancycraft.armour.custom.NuggetiemArmour;
+import com.clancy.clancycraft.items.custom.armor.MagniteArmourItem;
 import com.clancy.clancycraft.items.custom.armor.NuggetiemArmourItem;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 

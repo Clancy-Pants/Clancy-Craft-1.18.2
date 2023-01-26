@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clancycraft:magnite_ingot"
+    }
+  ],
+  "result": {
+    "item": "clancycraft:magnite_nugget",
+    "count": 9
+  }
+}

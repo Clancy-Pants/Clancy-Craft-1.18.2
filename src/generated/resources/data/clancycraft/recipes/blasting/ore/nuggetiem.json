@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "forge:ores/nuggetiem"
   },
-  "result": "clancycraft:raw_nuggetiem",
+  "result": "clancycraft:nuggetiem_ingot",
   "experience": 0.5,
   "cookingtime": 100
 }

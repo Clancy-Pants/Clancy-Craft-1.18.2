@@ -1,4 +1,4 @@
-package com.clancy.clancycraft.items.custom.armor;
+package com.clancy.clancycraft.items.custom;
 
 import com.clancy.clancycraft.ClancyCraft;
 import com.clancy.clancycraft.items.ClancyCraftItems;
@@ -14,7 +14,17 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     NUGGETIEM("nuggetiem", 28, new int[]{4, 7, 9, 4}, 15, SoundEvents.ARMOR_EQUIP_GOLD,
-            2.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.NUGGETIEM_INGOT.get()));
+            2.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.NUGGETIEM_INGOT.get())),
+    MAGNITE("magnite", 28, new int[]{4, 7, 9, 4}, 15, SoundEvents.ARMOR_EQUIP_GOLD,
+            2.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.MAGNITE_INGOT.get())),
+    LIGHT("light", 28, new int[]{4, 7, 9, 4}, 15, SoundEvents.ARMOR_EQUIP_GOLD,
+            2.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.BAR_OF_LIGHT.get())),
+
+    DARK("dark", 28, new int[]{4, 7, 9, 4}, 15, SoundEvents.ARMOR_EQUIP_GOLD,
+            2.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.DARK_METAL_INGOT.get())),
+
+    LIGHTMETAL("lightmetal", 28, new int[]{4, 7, 9, 4}, 15, SoundEvents.ARMOR_EQUIP_GOLD,
+            2.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.LIGHT_METAL_INGOT.get()));
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;

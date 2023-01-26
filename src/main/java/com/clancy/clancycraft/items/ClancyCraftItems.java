@@ -3,18 +3,15 @@ package com.clancy.clancycraft.items;
 import com.clancy.clancycraft.ClancyCraft;
 import com.clancy.clancycraft.init.ModToolDefinitions;
 import com.clancy.clancycraft.items.custom.PortalLighter;
-import com.clancy.clancycraft.items.custom.armor.ModArmorMaterials;
-import com.clancy.clancycraft.items.custom.armor.NuggetiemArmourItem;
-import com.clancy.clancycraft.liquid.ModFluids;
+import com.clancy.clancycraft.items.custom.armor.*;
+import com.clancy.clancycraft.items.custom.ModArmorMaterials;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import slimeknights.tconstruct.library.tools.item.ModifiableItem;
-import slimeknights.tconstruct.tools.item.ModifiableSwordItem;
 
 public class ClancyCraftItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -89,6 +86,62 @@ public class ClancyCraftItems {
                     new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
     public static final RegistryObject<Item> NUGGETIEM_BOOTS = ITEMS.register("nuggetiem_boots",
             () -> new NuggetiemArmourItem(ModArmorMaterials.NUGGETIEM, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
+
+    public static final RegistryObject<Item> MAGNITE_HELMET = ITEMS.register("magnite_helmet",
+            () -> new MagniteArmourItem(ModArmorMaterials.MAGNITE, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> MAGNITE_CHESTPLATE = ITEMS.register("magnite_chestplate",
+            () -> new MagniteArmourItem(ModArmorMaterials.MAGNITE, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> MAGNITE_LEGGING = ITEMS.register("magnite_leggings",
+            () -> new MagniteArmourItem(ModArmorMaterials.MAGNITE, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> MAGNITE_BOOTS = ITEMS.register("magnite_boots",
+            () -> new MagniteArmourItem(ModArmorMaterials.MAGNITE, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
+
+    public static final RegistryObject<Item> LIGHT_HELMET = ITEMS.register("light_helmet",
+            () -> new LightArmorItem(ModArmorMaterials.LIGHT, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> LIGHT_CHESTPLATE = ITEMS.register("light_chestplate",
+            () -> new LightArmorItem(ModArmorMaterials.LIGHT, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> LIGHT_LEGGING = ITEMS.register("light_leggings",
+            () -> new LightArmorItem(ModArmorMaterials.LIGHT, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> LIGHT_BOOTS = ITEMS.register("light_boots",
+            () -> new LightArmorItem(ModArmorMaterials.LIGHT, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
+
+    public static final RegistryObject<Item> BLACK_METAL_HELMET = ITEMS.register("black_metal_helmet",
+            () -> new BlackMetalArmorItem(ModArmorMaterials.DARK, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> BLACK_METAL_CHESTPLATE = ITEMS.register("black_metal_chestplate",
+            () -> new BlackMetalArmorItem(ModArmorMaterials.DARK, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> BLACK_METAL_LEGGING = ITEMS.register("black_metal_leggings",
+            () -> new BlackMetalArmorItem(ModArmorMaterials.DARK, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> BLACK_METAL_BOOTS = ITEMS.register("black_metal_boots",
+            () -> new BlackMetalArmorItem(ModArmorMaterials.DARK, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
+
+    public static final RegistryObject<Item> LIGHT_METAL_HELMET = ITEMS.register("light_metal_helmet",
+            () -> new LightMetalArmorItem(ModArmorMaterials.LIGHTMETAL, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> LIGHT_METAL_CHESTPLATE = ITEMS.register("light_metal_chestplate",
+            () -> new LightMetalArmorItem(ModArmorMaterials.LIGHTMETAL, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> LIGHT_METAL_LEGGING = ITEMS.register("light_metal_leggings",
+            () -> new LightMetalArmorItem(ModArmorMaterials.LIGHTMETAL, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+    public static final RegistryObject<Item> LIGHT_METAL_BOOTS = ITEMS.register("light_metal_boots",
+            () -> new LightMetalArmorItem(ModArmorMaterials.LIGHTMETAL, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
 
 

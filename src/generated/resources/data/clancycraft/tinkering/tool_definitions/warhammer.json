@@ -31,10 +31,6 @@
     {
       "name": "tconstruct:knockback",
       "level": 1
-    },
-    {
-      "name": "tconstruct:fiery",
-      "level": 1
     }
   ]
 }

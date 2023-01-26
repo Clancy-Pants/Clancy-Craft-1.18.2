@@ -1,6 +1,7 @@
-package com.clancy.clancycraft.datagen;
+package com.clancy.clancycraft.events;
 
 import com.clancy.clancycraft.ClancyCraft;
+import com.clancy.clancycraft.datagen.*;
 import com.clancy.clancycraft.datagen.tink.*;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,6 +27,7 @@ public class DataGenerator {
             gen.addProvider(new ModToolDefinitionProvider(gen));
             gen.addProvider(new ModToolSlotLayout(gen));
             gen.addProvider(new ClancyCraftTinkersRecipes(gen));
+            gen.addProvider(new ClancyCraftRecipes(gen));
             ClancyCraftBlockTags tags = new ClancyCraftBlockTags(gen, fileHelper);
             gen.addProvider(tags);
             gen.addProvider(new ClancyCraftFluidTags(gen, fileHelper));

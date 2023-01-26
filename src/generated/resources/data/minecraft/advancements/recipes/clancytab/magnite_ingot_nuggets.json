@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:magnite_ingot_nuggets"
+    ]
+  },
+  "criteria": {
+    "has_magnite_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "clancycraft:magnite_nugget"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:magnite_ingot_nuggets"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_magnite_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}

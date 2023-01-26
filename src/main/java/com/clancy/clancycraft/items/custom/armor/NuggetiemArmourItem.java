@@ -1,6 +1,6 @@
 package com.clancy.clancycraft.items.custom.armor;
 
-import com.clancy.clancycraft.armour.custom.NuggetiemArmour;
+import com.clancy.clancycraft.items.custom.ModArmorMaterials;
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

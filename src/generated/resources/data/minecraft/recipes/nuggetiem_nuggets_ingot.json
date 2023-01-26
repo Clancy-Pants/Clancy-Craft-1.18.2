@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clancycraft:nuggetiem_ingot"
+    }
+  ],
+  "result": {
+    "item": "clancycraft:nuggetiem_nugget",
+    "count": 9
+  }
+}

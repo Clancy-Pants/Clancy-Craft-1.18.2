@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "WQW",
+    "WWW"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:nether_star"
+    },
+    "Q": {
+      "item": "minecraft:lava_bucket"
+    },
+    "W": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "clancycraft:citrine"
+  }
+}

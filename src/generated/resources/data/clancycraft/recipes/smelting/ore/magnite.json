@@ -3,7 +3,7 @@
   "ingredient": {
     "tag": "forge:ores/magnite"
   },
-  "result": "clancycraft:raw_magnite",
+  "result": "clancycraft:magnite_ingot",
   "experience": 0.0,
   "cookingtime": 200
 }

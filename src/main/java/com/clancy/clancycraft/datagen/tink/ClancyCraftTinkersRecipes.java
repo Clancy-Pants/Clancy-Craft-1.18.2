@@ -90,7 +90,7 @@ public void alloyRecipes(Consumer<FinishedRecipe> consumer) {
                 ClancyCraftItems.NUGGETIEM_NUGGET.get(), castingFolder, "nuggetiem");
         metalMaterialRecipe(consumer, ClancyCraftMaterialsIds.nuggetiem, materialFolder, "nuggetiem", true);
         materialMeltingCasting(consumer, ClancyCraftMaterialsIds.nuggetiem, nuggetiem, materialFolder);
-        oreFurnace(consumer, ModTags.Items.RAW_NUGGETIEM, ClancyCraftItems.RAW_NUGGETIEM, "nuggetiem", false);
+        oreFurnace(consumer, ModTags.Items.RAW_NUGGETIEM, ClancyCraftItems.NUGGETIEM_INGOT, "nuggetiem", false);
         MeltingRecipeBuilder.melting(Ingredient.of(ModTags.Items.RAW_NUGGETIEM), new FluidStack(nuggetiem.get(),
                 FluidValues.INGOT*2), 1000, 30).save
                 (consumer, new ResourceLocation(ClancyCraft.MOD_ID, "smeltery/melting/raw/nuggetiem"));
@@ -103,7 +103,7 @@ public void alloyRecipes(Consumer<FinishedRecipe> consumer) {
                 ClancyCraftItems.MAGNITE_NUGGET.get(), castingFolder, "magnite");
         metalMaterialRecipe(consumer, ClancyCraftMaterialsIds.magnite, materialFolder, "magnite", true);
         materialMeltingCasting(consumer, ClancyCraftMaterialsIds.magnite, ModFluids.magnite, materialFolder);
-        oreFurnace(consumer, ModTags.Items.RAW_MAGNITE, ClancyCraftItems.RAW_MAGNITE, "magnite", false);
+        oreFurnace(consumer, ModTags.Items.RAW_MAGNITE, ClancyCraftItems.MAGNITE_INGOT, "magnite", false);
         MeltingRecipeBuilder.melting(Ingredient.of(ModTags.Items.RAW_MAGNITE), new FluidStack(magnite.get(),
                 FluidValues.INGOT*2), 1000, 30).save
                 (consumer, new ResourceLocation(ClancyCraft.MOD_ID, "smeltery/melting/raw/magnite"));
@@ -116,7 +116,7 @@ public void alloyRecipes(Consumer<FinishedRecipe> consumer) {
                 ClancyCraftItems.LIGHT_NUGGET.get(), castingFolder, "light");
         metalMaterialRecipe(consumer, ClancyCraftMaterialsIds.light, materialFolder, "light", true);
         materialMeltingCasting(consumer, ClancyCraftMaterialsIds.light, ModFluids.light, materialFolder);
-        oreFurnace(consumer, ModTags.Items.RAW_LIGHT, ClancyCraftItems.LIGHT_SHARDS, "light", false);
+        oreFurnace(consumer, ModTags.Items.RAW_LIGHT, ClancyCraftItems.BAR_OF_LIGHT, "light", false);
         MeltingRecipeBuilder.melting(Ingredient.of(ModTags.Items.RAW_LIGHT), new FluidStack(light.get(),
                 FluidValues.INGOT*2), 1000, 30).save
                 (consumer, new ResourceLocation(ClancyCraft.MOD_ID, "smeltery/melting/raw/light"));
@@ -129,7 +129,7 @@ public void alloyRecipes(Consumer<FinishedRecipe> consumer) {
                 ClancyCraftItems.DARK_METAL_NUGGET.get(), castingFolder, "dark");
         metalMaterialRecipe(consumer, ClancyCraftMaterialsIds.dark, materialFolder, "dark", true);
         materialMeltingCasting(consumer, ClancyCraftMaterialsIds.dark, ModFluids.dark, materialFolder);
-        oreFurnace(consumer, ModTags.Items.RAW_DARK, ClancyCraftItems.RAW_BLACK_METAL, "dark", false);
+        oreFurnace(consumer, ModTags.Items.RAW_DARK, ClancyCraftItems.DARK_METAL_INGOT, "dark", false);
         MeltingRecipeBuilder.melting(Ingredient.of(ModTags.Items.RAW_DARK), new FluidStack(dark.get(),
                 FluidValues.INGOT*2), 1000, 30).save
                 (consumer, new ResourceLocation(ClancyCraft.MOD_ID, "smeltery/melting/raw/dark"));

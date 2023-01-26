@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clancycraft:light_block"
+    }
+  ],
+  "result": {
+    "item": "clancycraft:bar_of_light",
+    "count": 9
+  }
+}

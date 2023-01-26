@@ -71,6 +71,30 @@ public class ClancyCraftLangEn extends LanguageProvider {
         addItem(ClancyCraftItems.NUGGETIEM_LEGGING, "Nuggetiem Plate Legs");
 
 
+        addItem(ClancyCraftItems.MAGNITE_BOOTS, "Magnite Boots");
+        addItem(ClancyCraftItems.MAGNITE_HELMET, "Magnite Helm");
+        addItem(ClancyCraftItems.MAGNITE_CHESTPLATE, "Magnite Chestplate");
+        addItem(ClancyCraftItems.MAGNITE_LEGGING, "Magnite Plate Legs");
+
+
+        addItem(ClancyCraftItems.LIGHT_BOOTS, "Light Boots");
+        addItem(ClancyCraftItems.LIGHT_HELMET, "Light Helm");
+        addItem(ClancyCraftItems.LIGHT_CHESTPLATE, "Light Chestplate");
+        addItem(ClancyCraftItems.LIGHT_LEGGING, "Light Plate Legs");
+
+
+        addItem(ClancyCraftItems.BLACK_METAL_BOOTS, "Black Metal Boots");
+        addItem(ClancyCraftItems.BLACK_METAL_HELMET, "Black Metal Helm");
+        addItem(ClancyCraftItems.BLACK_METAL_CHESTPLATE, "Black Metal Chestplate");
+        addItem(ClancyCraftItems.BLACK_METAL_LEGGING, "Black Metal Plate Legs");
+
+
+        addItem(ClancyCraftItems.LIGHT_METAL_BOOTS, "Light Metal Boots");
+        addItem(ClancyCraftItems.LIGHT_METAL_HELMET, "Light Metal Helm");
+        addItem(ClancyCraftItems.LIGHT_METAL_CHESTPLATE, "Light Metal Chestplate");
+        addItem(ClancyCraftItems.LIGHT_METAL_LEGGING, "Light Metal Plate Legs");
+
+
         addBlock(ModBlocks.RAINBOW_LEAVES, "Rainbow Leaves");
         addBlock(ModBlocks.RAINBOW_LOG, "Rainbow Log");
         addBlock(ModBlocks.RAINBOW_PLANKS, "Rainbow Planks");
@@ -78,6 +102,7 @@ public class ClancyCraftLangEn extends LanguageProvider {
         addBlock(ModBlocks.RAINBOW_WOOD, "Rainbow Wood");
         addBlock(ModBlocks.STRIPPED_RAINBOW_LOG, "Stripped Rainbow Log");
         addBlock(ModBlocks.STRIPPED_RAINBOW_WOOD, "Stripped Rainbow wood");
+
 
         addFluid(ModFluids.nuggetiem, "Molten Nuggetiem");
         add(ModFluids.nuggetiem.get().getBucket(), "Molten Nuggetiem Bucket");
