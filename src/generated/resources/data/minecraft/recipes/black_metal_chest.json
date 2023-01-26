@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "E E",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "clancycraft:dark_metal_ingot"
+    }
+  },
+  "result": {
+    "item": "clancycraft:black_metal_chestplate"
+  }
+}

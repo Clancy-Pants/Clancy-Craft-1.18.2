@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clancycraft:dark_metal_ingot"
+    }
+  ],
+  "result": {
+    "item": "clancycraft:dark_metal_nugget",
+    "count": 9
+  }
+}
