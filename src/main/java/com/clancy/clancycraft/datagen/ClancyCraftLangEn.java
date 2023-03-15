@@ -3,6 +3,7 @@ package com.clancy.clancycraft.datagen;
 import com.clancy.clancycraft.ClancyCraft;
 import com.clancy.clancycraft.blocks.ModBlocks;
 import com.clancy.clancycraft.datagen.tink.ClancyCraftMaterialsIds;
+import com.clancy.clancycraft.entitys.ModEntityTypes;
 import com.clancy.clancycraft.items.ClancyCraftItems;
 import com.clancy.clancycraft.liquid.ModFluids;
 import net.minecraft.data.DataGenerator;
@@ -30,6 +31,13 @@ public class ClancyCraftLangEn extends LanguageProvider {
 
         addItem(ClancyCraftItems.CITRINE, "Portal Lighter");
         addBlock(ModBlocks.CITRINE_BLOCK, "Portal Block");
+
+
+        addItem(ClancyCraftItems.CERB_SPAWN_EGG, "Cerberus Spawn Egg");
+        addItem(ClancyCraftItems.MINITAUR_SPAWN_EGG, "Minitaur Spawn Egg");
+        addItem(ClancyCraftItems.DEMON_SPAWN_EGG, "Demon Spawn Egg");
+        addItem(ClancyCraftItems.MEDUSA_SPAWN_EGG, "Medusa Spawn Egg");
+        addItem(ClancyCraftItems.YETI_SPAWN_EGG, "Yeti Spawn Egg");
 
 
         addItem(ClancyCraftItems.NUGGETIEM_INGOT, "Nuggetiem Ingot");
@@ -121,6 +129,12 @@ public class ClancyCraftLangEn extends LanguageProvider {
         addMaterial(ClancyCraftMaterialsIds.light, "Light", "Strong and durable", "Light");
         addMaterial(ClancyCraftMaterialsIds.dark, "Black Metal", "Strong and durable", "Black Metal");
         addMaterial(ClancyCraftMaterialsIds.lightmetal, "Light Metal", "Strong and durable", "Light Metal");
+
+        add(ModEntityTypes.CERB.get(), "Cerberus");
+        add(ModEntityTypes.MINITAUR.get(), "Minitaur");
+        add(ModEntityTypes.DEMON.get(), "Demon Lord");
+        add(ModEntityTypes.MEDUSA.get(), "Medusa");
+        add(ModEntityTypes.YETI.get(), "Yeti");
     }
 
 
@@ -150,6 +164,7 @@ public class ClancyCraftLangEn extends LanguageProvider {
     public void addGroup(String value) {
         add(String.format("itemGroup.%s", ClancyCraft.MOD_ID), value);
     }
+
 
     public String capitalize(String input) {
         if(input.contains("_")) {

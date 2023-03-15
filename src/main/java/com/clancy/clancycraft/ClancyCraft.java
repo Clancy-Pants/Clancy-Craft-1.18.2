@@ -1,10 +1,11 @@
 package com.clancy.clancycraft;
 
 import com.clancy.clancycraft.blocks.ModBlocks;
-import com.clancy.clancycraft.datagen.*;
-import com.clancy.clancycraft.datagen.tink.*;
+import com.clancy.clancycraft.entitys.ModEntityTypes;
+import com.clancy.clancycraft.entitys.client.boss.renderer.*;
+import com.clancy.clancycraft.entitys.projectiles.DemonFireRenderer;
+import com.clancy.clancycraft.entitys.projectiles.PoisonArrowRenderer;
 import com.clancy.clancycraft.items.ClancyCraftItems;
-import com.clancy.clancycraft.liquid.ModFluids;
 import com.clancy.clancycraft.world.biome.ModRegions;
 import com.clancy.clancycraft.world.biome.ModSurfaceRuleData;
 import com.clancy.clancycraft.world.dimenesion.ClancyCraftDimensions;
@@ -13,14 +14,13 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -32,17 +32,12 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import org.slf4j.Logger;
-import slimeknights.tconstruct.library.client.data.material.AbstractMaterialSpriteProvider;
-import slimeknights.tconstruct.library.client.data.material.MaterialPartTextureGenerator;
 import slimeknights.tconstruct.library.client.model.tools.ToolModel;
-import slimeknights.tconstruct.library.data.material.AbstractMaterialDataProvider;
-import slimeknights.tconstruct.tools.data.sprite.TinkerMaterialSpriteProvider;
-import slimeknights.tconstruct.tools.data.sprite.TinkerPartSpriteProvider;
 import terrablender.api.Regions;
 import terrablender.api.SurfaceRuleManager;
 
+import java.util.Locale;
 import java.util.stream.Collectors;
 
 import static com.clancy.clancycraft.liquid.ModFluids.*;
@@ -62,6 +57,7 @@ public class ClancyCraft
         ClancyCraftItems.register(eventBus);
         FLUIDS.register(eventBus);
         ClancyCraftDimensions.register();
+        ModEntityTypes.ENTITY_TYPES.register(eventBus);
 
 
 
@@ -92,6 +88,18 @@ public class ClancyCraft
         //LEAVES
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAINBOW_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAINBOW_SAPLING.get(), RenderType.cutout());
+
+
+
+        EntityRenderers.register(ModEntityTypes.CERB.get(), CerbRenderer::new);
+        EntityRenderers.register(ModEntityTypes.MINITAUR.get(), MinitaurRenderer::new);
+        EntityRenderers.register(ModEntityTypes.DEMON.get(), DemonRenderer::new);
+        EntityRenderers.register(ModEntityTypes.MEDUSA.get(), MedusaRenderer::new);
+        EntityRenderers.register(ModEntityTypes.YETI.get(), YetiRenderer::new);
+
+        EntityRenderers.register(ModEntityTypes.DEMON_FIRE.get(), DemonFireRenderer::new);
+        EntityRenderers.register(ModEntityTypes.POISON_ARROW.get(), PoisonArrowRenderer::new);
+
 
     }
     private void setup(final FMLCommonSetupEvent event)
@@ -142,6 +150,10 @@ public class ClancyCraft
             // Register a new block here
             LOGGER.info("HELLO from Register Block");
         }
+    }
+
+    public static ResourceLocation prefix(String name) {
+        return new ResourceLocation(ClancyCraft.MOD_ID, name.toLowerCase(Locale.ROOT));
     }
 
     @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = MOD_ID, value = Dist.CLIENT)

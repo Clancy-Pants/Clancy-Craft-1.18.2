@@ -1,12 +1,14 @@
 package com.clancy.clancycraft.items;
 
 import com.clancy.clancycraft.ClancyCraft;
+import com.clancy.clancycraft.entitys.ModEntityTypes;
 import com.clancy.clancycraft.init.ModToolDefinitions;
 import com.clancy.clancycraft.items.custom.PortalLighter;
 import com.clancy.clancycraft.items.custom.armor.*;
 import com.clancy.clancycraft.items.custom.ModArmorMaterials;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -158,6 +160,29 @@ public class ClancyCraftItems {
             () -> new ModifiableItem(TOOL, ModToolDefinitions.HALBERD));
     public static final RegistryObject<ModifiableItem> BATTLEAXE = ITEMS.register("battleaxe",
             () -> new ModifiableItem(TOOL, ModToolDefinitions.BATTLEAXE));
+
+    //Spawn Eggs
+
+
+    public static final RegistryObject<Item> CERB_SPAWN_EGG = ITEMS.register("cerb_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.CERB,0x948e8d, 0x3b3635,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
+    public static final RegistryObject<Item> MINITAUR_SPAWN_EGG = ITEMS.register("minitaur_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.MINITAUR,0x948e8d, 0x3b3635,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
+    public static final RegistryObject<Item> DEMON_SPAWN_EGG = ITEMS.register("demon_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.DEMON,0x948e8d, 0x3b3635,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
+    public static final RegistryObject<Item> MEDUSA_SPAWN_EGG = ITEMS.register("medusa_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.MEDUSA,0x948e8d, 0x3b3635,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
+    public static final RegistryObject<Item> YETI_SPAWN_EGG = ITEMS.register("yeti_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.YETI,0x948e8d, 0x3b3635,
+                    new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
 
 
 
