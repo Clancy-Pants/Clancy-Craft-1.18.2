@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "clancycraft:item/nuggetiem_chestplate"
+  }
+}
