@@ -148,19 +148,6 @@ public class ClancyCraftItems {
 
 
 
-    //wepons//
-    private static final Item.Properties TOOL = new Item.Properties().stacksTo(1).tab(ModCreativeModeTab.CLANCY_TAB);
-
-    public static final RegistryObject<ModifiableItem> KATANA = ITEMS.register("katana",
-            () -> new ModifiableItem(TOOL, ModToolDefinitions.KATANA));
-
-    public static final RegistryObject<ModifiableItem> WARHAMMER = ITEMS.register("warhammer",
-            () -> new ModifiableItem(TOOL, ModToolDefinitions.WARHAMMER));
-    public static final RegistryObject<ModifiableItem> HALBERD = ITEMS.register("halberd",
-            () -> new ModifiableItem(TOOL, ModToolDefinitions.HALBERD));
-    public static final RegistryObject<ModifiableItem> BATTLEAXE = ITEMS.register("battleaxe",
-            () -> new ModifiableItem(TOOL, ModToolDefinitions.BATTLEAXE));
-
     //Spawn Eggs
 
 
@@ -183,6 +170,26 @@ public class ClancyCraftItems {
     public static final RegistryObject<Item> YETI_SPAWN_EGG = ITEMS.register("yeti_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.YETI,0x948e8d, 0x3b3635,
                     new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)));
+
+
+
+
+
+
+    //wepons//
+    private static final Item.Properties TOOL = new Item.Properties().stacksTo(1).tab(ModCreativeModeTab.CLANCY_TAB);
+
+    public static final RegistryObject<ModifiableItem> KATANA = ITEMS.register("katana",
+            () -> new ModifiableItem(TOOL, ModToolDefinitions.KATANA));
+
+    public static final RegistryObject<ModifiableItem> WARHAMMER = ITEMS.register("warhammer",
+            () -> new ModifiableItem(TOOL, ModToolDefinitions.WARHAMMER));
+    public static final RegistryObject<ModifiableItem> HALBERD = ITEMS.register("halberd",
+            () -> new ModifiableItem(TOOL, ModToolDefinitions.HALBERD));
+    public static final RegistryObject<ModifiableItem> BATTLEAXE = ITEMS.register("battleaxe",
+            () -> new ModifiableItem(TOOL, ModToolDefinitions.BATTLEAXE));
+
+
 
 
 
