@@ -1,0 +1,19 @@
+{
+  "structures": [
+    {
+      "structure": "clancycraft:demonroom",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "salt": 1896542307,
+
+
+    "spacing": 120,
+
+    "separation": 40,
+
+    "type": "minecraft:random_spread"
+  }
+}

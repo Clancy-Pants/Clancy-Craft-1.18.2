@@ -1,0 +1,19 @@
+{
+  "structures": [
+    {
+      "structure": "clancycraft:cerbtemple",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "salt": 1694767080,
+
+
+    "spacing": 120,
+
+    "separation": 40,
+
+    "type": "minecraft:random_spread"
+  }
+}

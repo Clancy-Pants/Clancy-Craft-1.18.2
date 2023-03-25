@@ -1,0 +1,19 @@
+{
+  "structures": [
+    {
+      "structure": "clancycraft:minitaurhouse",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "salt": 1851367950,
+
+
+    "spacing": 120,
+
+    "separation": 40,
+
+    "type": "minecraft:random_spread"
+  }
+}

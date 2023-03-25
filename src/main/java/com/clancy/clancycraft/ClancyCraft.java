@@ -10,6 +10,7 @@ import com.clancy.clancycraft.world.biome.ModRegions;
 import com.clancy.clancycraft.world.biome.ModSurfaceRuleData;
 import com.clancy.clancycraft.world.dimenesion.ClancyCraftDimensions;
 import com.clancy.clancycraft.world.dimenesion.portals.ModPOIS;
+import com.clancy.clancycraft.world.structures.ClancyCraftStructures;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -47,7 +48,7 @@ import static com.clancy.clancycraft.liquid.ModFluids.*;
 public class ClancyCraft
 {
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public static final String MOD_ID = "clancycraft";
 
     public ClancyCraft()
@@ -58,6 +59,8 @@ public class ClancyCraft
         FLUIDS.register(eventBus);
         ClancyCraftDimensions.register();
         ModEntityTypes.ENTITY_TYPES.register(eventBus);
+        ClancyCraftStructures.register(eventBus);
+
 
 
 

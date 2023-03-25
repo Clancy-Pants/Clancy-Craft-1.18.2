@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "clancycraft:demonroom/start_pool",
+
+    "size": 1
+  },
+
+  "biomes": "#clancycraft:has_structure/demonroom",
+
+  "adapt_noise": true,
+  "spawn_overrides": {}
+
+}
