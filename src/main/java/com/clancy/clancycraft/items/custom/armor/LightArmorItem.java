@@ -27,7 +27,7 @@ public class LightArmorItem extends GeoArmorItem implements IAnimatable {
 
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ModArmorMaterials.LIGHT, new MobEffectInstance(MobEffects.LUCK, 200, 1)).build();
+                    .put(ModArmorMaterials.LIGHT, new MobEffectInstance(MobEffects.HEALTH_BOOST, 200, 1)).build();
 
     public LightArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);

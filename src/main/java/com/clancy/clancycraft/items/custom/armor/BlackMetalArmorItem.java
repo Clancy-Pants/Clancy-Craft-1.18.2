@@ -27,7 +27,7 @@ public class BlackMetalArmorItem extends GeoArmorItem implements IAnimatable {
 
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ModArmorMaterials.DARK, new MobEffectInstance(MobEffects.LUCK, 200, 1)).build();
+                    .put(ModArmorMaterials.DARK, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 1)).build();
 
     public BlackMetalArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);

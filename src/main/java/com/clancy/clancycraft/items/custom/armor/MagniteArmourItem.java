@@ -27,7 +27,7 @@ public class MagniteArmourItem extends GeoArmorItem implements IAnimatable {
 
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ModArmorMaterials.MAGNITE, new MobEffectInstance(MobEffects.LUCK, 200, 1)).build();
+                    .put(ModArmorMaterials.MAGNITE, new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 1)).build();
 
     public MagniteArmourItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);

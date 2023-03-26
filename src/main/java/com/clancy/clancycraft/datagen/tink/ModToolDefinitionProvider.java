@@ -25,10 +25,10 @@ public class ModToolDefinitionProvider extends AbstractToolDefinitionDataProvide
                 .part(toolHandle)
                 .part(toolHandle)
                 // stats
-                .stat(ToolStats.ATTACK_DAMAGE, 3f)
+                .stat(ToolStats.ATTACK_DAMAGE, 4.5f)
                 .stat(ToolStats.ATTACK_SPEED, 1.6f)
                 .multiplier(ToolStats.MINING_SPEED, 0.5f)
-                .multiplier(ToolStats.ATTACK_SPEED, 0.5f)
+                .multiplier(ToolStats.ATTACK_SPEED, 1f)
                 .multiplier(ToolStats.DURABILITY, 1.1f)
                 .largeToolStartingSlots()
                 // traits

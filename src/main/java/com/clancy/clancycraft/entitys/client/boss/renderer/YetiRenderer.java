@@ -21,7 +21,7 @@ public class YetiRenderer extends GeoEntityRenderer<YetiEntity> {
 
     @Override
     public ResourceLocation getTextureLocation(YetiEntity instance) {
-        return new ResourceLocation(ClancyCraft.MOD_ID, "textures/entity/yeti/yeti_texture.png");
+        return new ResourceLocation(ClancyCraft.MOD_ID, "textures/entity/yeti/yeti.png");
     }
 
     @Override

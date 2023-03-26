@@ -49,8 +49,8 @@ public class MedusaEntity extends Monster implements RangedAttackMob,IAnimatable
 
     public static AttributeSupplier setAttributes() {
         return Monster.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 200.0D)
-                .add(Attributes.ATTACK_DAMAGE, 5.0f)
+                .add(Attributes.MAX_HEALTH, 450.0D)
+                .add(Attributes.ATTACK_DAMAGE, 15.0f)
                 .add(Attributes.ATTACK_SPEED, 2.0f)
                 .add(Attributes.MOVEMENT_SPEED, 0.5f).build();
 
@@ -60,6 +60,7 @@ public class MedusaEntity extends Monster implements RangedAttackMob,IAnimatable
         this.goalSelector.addGoal(0, new FloatGoal(this));
         this.goalSelector.addGoal(1, new AlwaysWatchTargetGoal(this));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, false));
+        this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 0.75D, true));
         this.goalSelector.addGoal(3, new RangedAttackGoal
                 (this, 1.0D, 40, 40, 40.0F){
             @Override

@@ -15,16 +15,16 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial {
     NUGGETIEM("nuggetiem", 28, new int[]{4, 7, 9, 4}, 15, SoundEvents.ARMOR_EQUIP_GOLD,
             2.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.NUGGETIEM_INGOT.get())),
-    MAGNITE("magnite", 28, new int[]{4, 7, 9, 4}, 15, SoundEvents.ARMOR_EQUIP_GOLD,
-            2.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.MAGNITE_INGOT.get())),
-    LIGHT("light", 28, new int[]{4, 7, 9, 4}, 15, SoundEvents.ARMOR_EQUIP_GOLD,
-            2.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.BAR_OF_LIGHT.get())),
+    MAGNITE("magnite", 28, new int[]{5, 8, 10, 5}, 20, SoundEvents.ARMOR_EQUIP_GOLD,
+            3.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.MAGNITE_INGOT.get())),
+    LIGHT("light", 28, new int[]{6, 9, 11, 6}, 20, SoundEvents.ARMOR_EQUIP_GOLD,
+            3.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.BAR_OF_LIGHT.get())),
 
-    DARK("dark", 28, new int[]{4, 7, 9, 4}, 15, SoundEvents.ARMOR_EQUIP_GOLD,
-            2.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.DARK_METAL_INGOT.get())),
+    DARK("dark", 28, new int[]{7, 10, 12, 7}, 20, SoundEvents.ARMOR_EQUIP_GOLD,
+            3.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.DARK_METAL_INGOT.get())),
 
-    LIGHTMETAL("lightmetal", 28, new int[]{4, 7, 9, 4}, 15, SoundEvents.ARMOR_EQUIP_GOLD,
-            2.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.LIGHT_METAL_INGOT.get()));
+    LIGHTMETAL("lightmetal", 28, new int[]{8, 11, 13, 8}, 25, SoundEvents.ARMOR_EQUIP_GOLD,
+            4.0F, 0.5F, () -> Ingredient.of(ClancyCraftItems.LIGHT_METAL_INGOT.get()));
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     private final String name;
