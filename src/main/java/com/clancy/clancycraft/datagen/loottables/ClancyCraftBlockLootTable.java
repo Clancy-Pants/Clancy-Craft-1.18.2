@@ -29,6 +29,11 @@ public class ClancyCraftBlockLootTable extends BlockLoot {
         this.dropSelf(ModBlocks.STRIPPED_RAINBOW_WOOD.get());
         this.dropSelf(ModBlocks.RAINBOW_SAPLING.get());
         this.dropSelf(ModBlocks.RAINBOW_PLANKS.get());
+        this.dropSelf(ModBlocks.RAINBOW_STAIRS.get());
+        this.dropSelf(ModBlocks.RAINBOW_SLAB.get());
+        this.dropSelf(ModBlocks.RAINBOW_FENCE.get());
+        this.dropSelf(ModBlocks.RAINBOW_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.RAINBOW_WALL.get());
         this.add(ModBlocks.RAINBOW_LEAVES.get(), (block) ->
                 createLeavesDrops(block, ModBlocks.RAINBOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 

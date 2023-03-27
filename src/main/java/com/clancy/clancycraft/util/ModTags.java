@@ -43,6 +43,11 @@ public class ModTags {
 
         public static final TagKey<Block> DIAMONDLVL = tag("needs_diamond_tool");
 
+        public static final TagKey<Block> WALL = tag("walls");
+
+        public static final TagKey<Block> FENCE = tag("fences");
+
+
 
 
 

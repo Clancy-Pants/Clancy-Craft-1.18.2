@@ -9,6 +9,7 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import javax.annotation.Nonnull;
@@ -387,6 +388,69 @@ public class ClancyCraftRecipes extends RecipeProvider implements IConditionBuil
                 .unlockedBy("has_light_metal_ingot", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ClancyCraftItems.LIGHT_METAL_INGOT.get()).build()))
                 .save(consumer,"light_metal_boots");
+
+
+
+        ShapedRecipeBuilder.shaped(ModBlocks.RAINBOW_STAIRS.get(),4)
+                .define('E', ModBlocks.RAINBOW_PLANKS.get())
+                .pattern("E  ")
+                .pattern("EE ")
+                .pattern("EEE")
+                .unlockedBy("has_rainbow_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModBlocks.RAINBOW_PLANKS.get()).build()))
+                .save(consumer,"rainbow_stairs");
+
+
+        ShapedRecipeBuilder.shaped(ModBlocks.RAINBOW_SLAB.get(),6)
+                .define('E', ModBlocks.RAINBOW_PLANKS.get())
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("EEE")
+                .unlockedBy("has_rainbow_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModBlocks.RAINBOW_PLANKS.get()).build()))
+                .save(consumer,"rainbow_slabs");
+
+
+
+        ShapedRecipeBuilder.shaped(ModBlocks.RAINBOW_FENCE.get(),3)
+                .define('E', ModBlocks.RAINBOW_PLANKS.get())
+                .define('W', Items.STICK)
+                .pattern("   ")
+                .pattern("EWE")
+                .pattern("EWE")
+                .unlockedBy("has_rainbow_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModBlocks.RAINBOW_PLANKS.get()).build()))
+                .save(consumer,"rainbow_fence");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.RAINBOW_FENCE_GATE.get())
+                .define('E', ModBlocks.RAINBOW_PLANKS.get())
+                .define('W', Items.STICK)
+                .pattern("   ")
+                .pattern("WEW")
+                .pattern("WEW")
+                .unlockedBy("has_rainbow_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModBlocks.RAINBOW_PLANKS.get()).build()))
+                .save(consumer,"rainbow_fence_gate");
+
+
+        ShapedRecipeBuilder.shaped(ModBlocks.RAINBOW_WALL.get(),6)
+                .define('E', ModBlocks.RAINBOW_PLANKS.get())
+                .pattern("   ")
+                .pattern("EEE")
+                .pattern("EEE")
+                .unlockedBy("has_rainbow_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModBlocks.RAINBOW_PLANKS.get()).build()))
+                .save(consumer,"rainbow_wall");
+
+
+        ShapedRecipeBuilder.shaped(Blocks.CRAFTING_TABLE)
+                .define('E', ModBlocks.RAINBOW_PLANKS.get())
+                .pattern("   ")
+                .pattern("EE ")
+                .pattern("EE ")
+                .unlockedBy("has_rainbow_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModBlocks.RAINBOW_PLANKS.get()).build()))
+                .save(consumer,"rainbow_crafting_table");
 
 
 

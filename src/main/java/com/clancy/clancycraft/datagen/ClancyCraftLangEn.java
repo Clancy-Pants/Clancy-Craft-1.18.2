@@ -110,6 +110,11 @@ public class ClancyCraftLangEn extends LanguageProvider {
         addBlock(ModBlocks.RAINBOW_WOOD, "Rainbow Wood");
         addBlock(ModBlocks.STRIPPED_RAINBOW_LOG, "Stripped Rainbow Log");
         addBlock(ModBlocks.STRIPPED_RAINBOW_WOOD, "Stripped Rainbow wood");
+        addBlock(ModBlocks.RAINBOW_STAIRS, "Rainbow Stairs");
+        addBlock(ModBlocks.RAINBOW_SLAB, "Rainbow Slab");
+        addBlock(ModBlocks.RAINBOW_FENCE, "Rainbow Fence");
+        addBlock(ModBlocks.RAINBOW_FENCE_GATE, "Rainbow Fence Gate");
+        addBlock(ModBlocks.RAINBOW_WALL, "Rainbow Wall");
 
 
         addFluid(ModFluids.nuggetiem, "Molten Nuggetiem");

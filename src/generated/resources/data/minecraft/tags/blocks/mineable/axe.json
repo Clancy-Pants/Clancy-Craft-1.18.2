@@ -5,6 +5,11 @@
     "clancycraft:stripped_rainbow_wood",
     "clancycraft:stripped_rainbow_log",
     "clancycraft:rainbow_wood",
-    "clancycraft:rainbow_planks"
+    "clancycraft:rainbow_planks",
+    "clancycraft:rainbow_stairs",
+    "clancycraft:rainbow_slab",
+    "clancycraft:rainbow_fence",
+    "clancycraft:rainbow_fence_gate",
+    "clancycraft:rainbow_wall"
   ]
 }

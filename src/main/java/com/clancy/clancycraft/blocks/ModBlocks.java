@@ -14,10 +14,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.LeavesBlock;
-import net.minecraft.world.level.block.SaplingBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
@@ -130,6 +127,25 @@ public class ModBlocks {
                     return 30;
                 }
             }, ModCreativeModeTab.CLANCY_TAB);
+
+
+    public static final RegistryObject<Block> RAINBOW_STAIRS = registerBlock("rainbow_stairs",
+            () -> new StairBlock(() -> ModBlocks.RAINBOW_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of(Material.WOOD).strength(5f).requiresCorrectToolForDrops()),
+            ModCreativeModeTab.CLANCY_TAB);
+    public static final RegistryObject<Block> RAINBOW_SLAB = registerBlock("rainbow_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
+
+    public static final RegistryObject<Block> RAINBOW_FENCE = registerBlock("rainbow_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
+    public static final RegistryObject<Block> RAINBOW_FENCE_GATE = registerBlock("rainbow_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
+    public static final RegistryObject<Block> RAINBOW_WALL = registerBlock("rainbow_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
 
 
 

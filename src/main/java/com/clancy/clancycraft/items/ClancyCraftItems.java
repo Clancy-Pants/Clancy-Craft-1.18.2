@@ -176,6 +176,10 @@ public class ClancyCraftItems {
 
 
 
+
+
+
+
     //wepons//
     private static final Item.Properties TOOL = new Item.Properties().stacksTo(1).tab(ModCreativeModeTab.CLANCY_TAB);
 
