@@ -1,4 +1,4 @@
-package com.clancy.clancycraft.datagen;
+package com.clancy.clancycraft.datagen.tags;
 
 import com.clancy.clancycraft.ClancyCraft;
 import com.clancy.clancycraft.blocks.ModBlocks;
@@ -35,6 +35,41 @@ public class ClancyCraftBlockTags extends BlockTagsProvider {
         tag(LIGHT).add(ModBlocks.LIGHT_BLOCK.get());
         tag(DARK).add(ModBlocks.BLACK_METAL_BLOCK.get());
         tag(LIGHTMETAL).add(ModBlocks.LIGHT_METAL_BLOCK.get());
+
+
+        tag(LOGS).add(ModBlocks.RAINBOW_LOG.get());
+        tag(LOGS_THAT_BURN).add(ModBlocks.RAINBOW_LOG.get());
+
+        tag(AXE).add(ModBlocks.RAINBOW_LOG.get());
+        tag(AXE).add(ModBlocks.STRIPPED_RAINBOW_WOOD.get());
+        tag(AXE).add(ModBlocks.STRIPPED_RAINBOW_LOG.get());
+        tag(AXE).add(ModBlocks.RAINBOW_WOOD.get());
+        tag(AXE).add(ModBlocks.RAINBOW_PLANKS.get());
+
+
+
+        tag(PICKAXE).add(ModBlocks.NUGGETIEM_ORE.get());
+        tag(PICKAXE).add(ModBlocks.NUGGETIEM_BLOCK.get());
+        tag(PICKAXE).add(ModBlocks.MAGNITE_ORE.get());
+        tag(PICKAXE).add(ModBlocks.MAGNITE_BLOCK.get());
+        tag(PICKAXE).add(ModBlocks.SHARDS_OF_LIGHT.get());
+        tag(PICKAXE).add(ModBlocks.LIGHT_BLOCK.get());
+        tag(PICKAXE).add(ModBlocks.BLACK_METAL_ORE.get());
+        tag(PICKAXE).add(ModBlocks.BLACK_METAL_BLOCK.get());
+        tag(PICKAXE).add(ModBlocks.LIGHT_METAL_BLOCK.get());
+        tag(PICKAXE).add(ModBlocks.CITRINE_BLOCK.get());
+
+
+
+        tag(DIAMONDLVL).add(ModBlocks.NUGGETIEM_ORE.get());
+        tag(DIAMONDLVL).add(ModBlocks.NUGGETIEM_BLOCK.get());
+        tag(DIAMONDLVL).add(ModBlocks.MAGNITE_ORE.get());
+        tag(DIAMONDLVL).add(ModBlocks.MAGNITE_BLOCK.get());
+        tag(DIAMONDLVL).add(ModBlocks.SHARDS_OF_LIGHT.get());
+        tag(DIAMONDLVL).add(ModBlocks.LIGHT_BLOCK.get());
+        tag(DIAMONDLVL).add(ModBlocks.BLACK_METAL_ORE.get());
+        tag(DIAMONDLVL).add(ModBlocks.BLACK_METAL_BLOCK.get());
+        tag(DIAMONDLVL).add(ModBlocks.LIGHT_METAL_BLOCK.get());
 
 
 

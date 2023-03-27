@@ -33,10 +33,22 @@ public class ModTags {
 
 
 
+        public static final TagKey<Block> LOGS = tag("logs");
+
+        public static final TagKey<Block> LOGS_THAT_BURN = tag("logs_that_burn");
+
+        public static final TagKey<Block> AXE = tag("mineable/axe");
+
+        public static final TagKey<Block> PICKAXE = tag("mineable/pickaxe");
+
+        public static final TagKey<Block> DIAMONDLVL = tag("needs_diamond_tool");
+
+
+
 
 
         private static TagKey<Block> tag(String name) {
-            return BlockTags.create(new ResourceLocation(ClancyCraft.MOD_ID, name));
+            return BlockTags.create(new ResourceLocation("minecraft", name));
         }
 
         private static TagKey<Block> forgeTag(String name) {

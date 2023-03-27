@@ -1,4 +1,4 @@
-package com.clancy.clancycraft.datagen;
+package com.clancy.clancycraft.datagen.tink;
 
 import com.clancy.clancycraft.datagen.tink.ClancyCraftMaterialsIds;
 import net.minecraft.data.DataGenerator;

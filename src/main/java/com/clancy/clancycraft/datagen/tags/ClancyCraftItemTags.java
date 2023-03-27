@@ -1,4 +1,4 @@
-package com.clancy.clancycraft.datagen;
+package com.clancy.clancycraft.datagen.tags;
 
 import com.clancy.clancycraft.ClancyCraft;
 import com.clancy.clancycraft.blocks.ModBlocks;
