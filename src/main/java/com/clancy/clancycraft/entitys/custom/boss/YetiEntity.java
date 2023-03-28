@@ -95,11 +95,11 @@ public class YetiEntity extends Monster implements IAnimatable {
     }
 
     protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
-        return SoundEvents.DOLPHIN_HURT;
+        return SoundEvents.HORSE_HURT;
     }
 
     protected SoundEvent getDeathSound() {
-        return SoundEvents.DOLPHIN_DEATH;
+        return SoundEvents.HORSE_DEATH;
     }
 
     protected float getSoundVolume() {

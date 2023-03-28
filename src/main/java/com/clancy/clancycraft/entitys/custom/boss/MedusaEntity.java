@@ -97,7 +97,7 @@ public class MedusaEntity extends Monster implements RangedAttackMob,IAnimatable
     }
 
     protected void playStepSound(BlockPos pos, BlockState blockIn) {
-        this.playSound(SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, 0.15F, 1.0F);
+        this.playSound(SoundEvents.SLIME_BLOCK_STEP, 0.15F, 1.0F);
     }
 
     protected SoundEvent getAmbientSound() {
@@ -105,11 +105,11 @@ public class MedusaEntity extends Monster implements RangedAttackMob,IAnimatable
     }
 
     protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
-        return SoundEvents.DOLPHIN_HURT;
+        return SoundEvents.CREEPER_HURT;
     }
 
     protected SoundEvent getDeathSound() {
-        return SoundEvents.DOLPHIN_DEATH;
+        return SoundEvents.CREEPER_DEATH;
     }
 
     protected float getSoundVolume() {

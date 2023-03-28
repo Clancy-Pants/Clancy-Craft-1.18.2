@@ -89,19 +89,19 @@ public class CerbEntity extends Monster implements IAnimatable {
     }
 
     protected void playStepSound(BlockPos pos, BlockState blockIn) {
-        this.playSound(SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, 0.15F, 1.0F);
+        this.playSound(SoundEvents.ANVIL_STEP, 0.15F, 1.0F);
     }
 
     protected SoundEvent getAmbientSound() {
-        return SoundEvents.CAT_STRAY_AMBIENT;
+        return SoundEvents.WITCH_AMBIENT;
     }
 
     protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
-        return SoundEvents.DOLPHIN_HURT;
+        return SoundEvents.RAVAGER_HURT;
     }
 
     protected SoundEvent getDeathSound() {
-        return SoundEvents.DOLPHIN_DEATH;
+        return SoundEvents.WITHER_DEATH;
     }
 
     protected float getSoundVolume() {

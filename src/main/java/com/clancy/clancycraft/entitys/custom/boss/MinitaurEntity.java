@@ -88,7 +88,7 @@ public class MinitaurEntity extends Monster implements IAnimatable {
     }
 
     protected void playStepSound(BlockPos pos, BlockState blockIn) {
-        this.playSound(SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, 0.15F, 1.0F);
+        this.playSound(SoundEvents.IRON_GOLEM_STEP, 0.15F, 1.0F);
     }
 
     protected SoundEvent getAmbientSound() {
@@ -96,11 +96,11 @@ public class MinitaurEntity extends Monster implements IAnimatable {
     }
 
     protected SoundEvent getHurtSound(DamageSource damageSourceIn) {
-        return SoundEvents.DOLPHIN_HURT;
+        return SoundEvents.IRON_GOLEM_HURT;
     }
 
     protected SoundEvent getDeathSound() {
-        return SoundEvents.DOLPHIN_DEATH;
+        return SoundEvents.IRON_GOLEM_DEATH;
     }
 
     protected float getSoundVolume() {
