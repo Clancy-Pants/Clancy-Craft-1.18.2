@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_pressed",
+  "textures": {
+    "texture": "clancycraft:block/rainbow_planks"
+  }
+}

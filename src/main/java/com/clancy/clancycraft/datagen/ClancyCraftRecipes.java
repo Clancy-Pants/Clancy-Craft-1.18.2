@@ -453,6 +453,46 @@ public class ClancyCraftRecipes extends RecipeProvider implements IConditionBuil
                 .save(consumer,"rainbow_crafting_table");
 
 
+        ShapedRecipeBuilder.shaped(ModBlocks.RAINBOW_DOOR.get(), 3)
+                .define('E', ModBlocks.RAINBOW_PLANKS.get())
+                .pattern("EE ")
+                .pattern("EE ")
+                .pattern("EE ")
+                .unlockedBy("has_rainbow_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModBlocks.RAINBOW_PLANKS.get()).build()))
+                .save(consumer,"rainbow_door");
+
+
+        ShapedRecipeBuilder.shaped(ModBlocks.RAINBOW_TRAPDOOR.get(), 2)
+                .define('E', ModBlocks.RAINBOW_PLANKS.get())
+                .pattern("EEE")
+                .pattern("EEE")
+                .pattern("   ")
+                .unlockedBy("has_rainbow_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModBlocks.RAINBOW_PLANKS.get()).build()))
+                .save(consumer,"rainbow_trapdoor");
+
+
+        ShapedRecipeBuilder.shaped(ModBlocks.RAINBOW_BUTTON.get())
+                .define('E', ModBlocks.RAINBOW_PLANKS.get())
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("E  ")
+                .unlockedBy("has_rainbow_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModBlocks.RAINBOW_PLANKS.get()).build()))
+                .save(consumer,"rainbow_button");
+
+
+        ShapedRecipeBuilder.shaped(ModBlocks.RAINBOW_PRESSURE_PLATE.get())
+                .define('E', ModBlocks.RAINBOW_PLANKS.get())
+                .pattern("   ")
+                .pattern("EEE")
+                .pattern("   ")
+                .unlockedBy("has_rainbow_planks", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModBlocks.RAINBOW_PLANKS.get()).build()))
+                .save(consumer,"rainbow_pressure_plate");
+
+
 
 
 

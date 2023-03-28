@@ -10,6 +10,10 @@
     "clancycraft:rainbow_slab",
     "clancycraft:rainbow_fence",
     "clancycraft:rainbow_fence_gate",
-    "clancycraft:rainbow_wall"
+    "clancycraft:rainbow_wall",
+    "clancycraft:rainbow_door",
+    "clancycraft:rainbow_trapdoor",
+    "clancycraft:rainbow_button",
+    "clancycraft:rainbow_pressure_plate"
   ]
 }

@@ -147,6 +147,20 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
 
+    public static final RegistryObject<Block> RAINBOW_BUTTON = registerBlock("rainbow_button",
+            () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(5f).requiresCorrectToolForDrops().noCollission()), ModCreativeModeTab.CLANCY_TAB);
+    public static final RegistryObject<Block> RAINBOW_PRESSURE_PLATE = registerBlock("rainbow_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
+
+    public static final RegistryObject<Block> RAINBOW_DOOR = registerBlock("rainbow_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(5f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.CLANCY_TAB);
+    public static final RegistryObject<Block> RAINBOW_TRAPDOOR = registerBlock("rainbow_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(5f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.CLANCY_TAB);
+
 
 
 

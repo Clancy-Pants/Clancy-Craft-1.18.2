@@ -50,6 +50,10 @@ public class ClancyCraftBlockTags extends BlockTagsProvider {
         tag(AXE).add(ModBlocks.RAINBOW_FENCE.get());
         tag(AXE).add(ModBlocks.RAINBOW_FENCE_GATE.get());
         tag(AXE).add(ModBlocks.RAINBOW_WALL.get());
+        tag(AXE).add(ModBlocks.RAINBOW_DOOR.get());
+        tag(AXE).add(ModBlocks.RAINBOW_TRAPDOOR.get());
+        tag(AXE).add(ModBlocks.RAINBOW_BUTTON.get());
+        tag(AXE).add(ModBlocks.RAINBOW_PRESSURE_PLATE.get());
 
 
 

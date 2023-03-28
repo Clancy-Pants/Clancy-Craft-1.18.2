@@ -86,14 +86,13 @@ public class ClancyCraft
 
 
     private void clientSetup(final FMLClientSetupEvent event) {
-//METALS
 
         //LEAVES
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAINBOW_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAINBOW_SAPLING.get(), RenderType.cutout());
 
 
-
+//mobs
         EntityRenderers.register(ModEntityTypes.CERB.get(), CerbRenderer::new);
         EntityRenderers.register(ModEntityTypes.MINITAUR.get(), MinitaurRenderer::new);
         EntityRenderers.register(ModEntityTypes.DEMON.get(), DemonRenderer::new);
@@ -103,6 +102,10 @@ public class ClancyCraft
         EntityRenderers.register(ModEntityTypes.DEMON_FIRE.get(), DemonFireRenderer::new);
         EntityRenderers.register(ModEntityTypes.POISON_ARROW.get(), PoisonArrowRenderer::new);
 
+
+        //doors
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAINBOW_DOOR.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAINBOW_TRAPDOOR.get(), RenderType.translucent());
 
     }
     private void setup(final FMLCommonSetupEvent event)

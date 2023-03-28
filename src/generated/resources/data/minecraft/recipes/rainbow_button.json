@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "   ",
+    "E  "
+  ],
+  "key": {
+    "E": {
+      "item": "clancycraft:rainbow_planks"
+    }
+  },
+  "result": {
+    "item": "clancycraft:rainbow_button"
+  }
+}
