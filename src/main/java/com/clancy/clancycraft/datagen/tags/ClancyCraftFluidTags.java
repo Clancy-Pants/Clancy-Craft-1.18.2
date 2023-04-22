@@ -37,6 +37,8 @@ public class ClancyCraftFluidTags extends FluidTagsProvider {
         tag(DARK_).add(ModFluids.dark.get());
         tag(LIGHTMETAL).add(ModFluids.lightmetal.get());
         tag(LIGHTMETAL_).add(ModFluids.lightmetal.get());
+        tag(LIQUID_COAL).add(ModFluids.liquid_coal.get());
+        tag(LIQUID_COAL_).add(ModFluids.liquid_coal.get());
 
     }
 }

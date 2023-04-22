@@ -23,6 +23,8 @@ public class ModFluids {
 
     public static FluidObject<ForgeFlowingFluid> lightmetal = register("lightmetal", 1000);
 
+    public static FluidObject<ForgeFlowingFluid> liquid_coal = register("liquid_coal", 1300);
+
     private static @NotNull FluidObject<ForgeFlowingFluid> register(String name, int temp) {
         String still = String.format("%s:block/fluid/%s/still", ClancyCraft.MOD_ID, name);
         String flow = String.format("%s:block/fluid/%s/flowing", ClancyCraft.MOD_ID, name);

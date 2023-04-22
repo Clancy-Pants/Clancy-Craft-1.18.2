@@ -13,6 +13,7 @@ import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.crafting.CompoundIngredient;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
@@ -28,6 +29,7 @@ import slimeknights.tconstruct.library.recipe.alloying.AlloyRecipeBuilder;
 import slimeknights.tconstruct.library.recipe.casting.ItemCastingRecipeBuilder;
 import slimeknights.tconstruct.library.recipe.casting.material.CompositeCastingRecipeBuilder;
 import slimeknights.tconstruct.library.recipe.casting.material.MaterialCastingRecipeBuilder;
+import slimeknights.tconstruct.library.recipe.fuel.MeltingFuelBuilder;
 import slimeknights.tconstruct.library.recipe.ingredient.MaterialIngredient;
 import slimeknights.tconstruct.library.recipe.melting.MeltingRecipeBuilder;
 import slimeknights.tconstruct.library.recipe.molding.MoldingRecipeBuilder;
@@ -135,6 +137,15 @@ public void alloyRecipes(Consumer<FinishedRecipe> consumer) {
                 (consumer, new ResourceLocation(ClancyCraft.MOD_ID, "smeltery/melting/raw/dark"));
 
 
+
+        MeltingRecipeBuilder.melting(Ingredient.of(Items.COAL), new FluidStack(liquid_coal.get(),
+                FluidValues.BOTTLE), 1000, 30).save
+                (consumer, new ResourceLocation(ClancyCraft.MOD_ID, "smeltery/melting/fuel/recipe/liquid_coal"));
+
+        MeltingFuelBuilder.fuel(new FluidStack(liquid_coal.get(), 50), 150)
+                .save(consumer, modResource(meltingFolder+ "fuel/liquid_coal"));
+
+// alloys
         metalMelting(consumer, lightmetal.get(), "lightmetal",
                 false, meltingFolder, false);
         metalCasting(consumer, lightmetal,
@@ -142,6 +153,10 @@ public void alloyRecipes(Consumer<FinishedRecipe> consumer) {
                 ClancyCraftItems.LIGHT_METAL_NUGGET.get(), castingFolder, "lightmetal");
         metalMaterialRecipe(consumer, ClancyCraftMaterialsIds.lightmetal, materialFolder, "lightmetal", true);
         materialMeltingCasting(consumer, ClancyCraftMaterialsIds.lightmetal, ModFluids.lightmetal, materialFolder);
+
+
+
+
 
 
 

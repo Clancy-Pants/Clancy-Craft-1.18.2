@@ -132,6 +132,8 @@ public class ClancyCraftLangEn extends LanguageProvider {
         add(ModFluids.dark.get().getBucket(), "Molten Black Metal Bucket");
         addFluid(ModFluids.lightmetal, "Molten Light Metal");
         add(ModFluids.lightmetal.get().getBucket(), "Molten Light Metal Bucket");
+        addFluid(ModFluids.liquid_coal, "Liquid Coal");
+        add(ModFluids.liquid_coal.get().getBucket(), "Liquid Coal");
 
 
         addMaterial(ClancyCraftMaterialsIds.nuggetiem, "Nuggetiem", "Strong and durable", "Nuggetiem Metal");

@@ -84,6 +84,9 @@ public class ModTags {
         public static final TagKey<Fluid> LIGHTMETAL = create("forge:lightmetal");
         public static final TagKey<Fluid> LIGHTMETAL_ = create("clancycraft:lightmetal");
 
+        public static final TagKey<Fluid> LIQUID_COAL = create("forge:liquid_coal");
+        public static final TagKey<Fluid> LIQUID_COAL_ = create("clancycraft:liquid_coal");
+
 
     }
 
