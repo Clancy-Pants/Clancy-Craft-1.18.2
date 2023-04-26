@@ -53,11 +53,52 @@ public class ClancyCraftItemTags extends ItemTagProvider {
         tag(ModTags.Items.LIGHT_METAL_NUGGET).add(ClancyCraftItems.LIGHT_METAL_NUGGET.get());
 
 
-        tag(TinkerTags.Items.MODIFIABLE).add(ClancyCraftItems.KATANA.get());
-        tag(TinkerTags.Items.MELEE).add(ClancyCraftItems.KATANA.get());
-        tag(TinkerTags.Items.MODIFIABLE).add(ClancyCraftItems.WARHAMMER.get());
-        tag(TinkerTags.Items.MELEE).add(ClancyCraftItems.WARHAMMER.get());
-        tag(TinkerTags.Items.MODIFIABLE).add(ClancyCraftItems.HALBERD.get());
-        tag(TinkerTags.Items.MELEE).add(ClancyCraftItems.HALBERD.get());
+        tag(TinkerTags.Items.MODIFIABLE).add(
+                ClancyCraftItems.KATANA.get(),
+                ClancyCraftItems.WARHAMMER.get(),
+                ClancyCraftItems.HALBERD.get(),
+                ClancyCraftItems.BATTLEAXE.get() );
+
+        tag(TinkerTags.Items.MELEE).add(
+                ClancyCraftItems.KATANA.get(),
+                ClancyCraftItems.WARHAMMER.get(),
+                ClancyCraftItems.HALBERD.get(),
+                ClancyCraftItems.BATTLEAXE.get() );
+
+        tag(TinkerTags.Items.SWORD).add(
+                ClancyCraftItems.KATANA.get(),
+                ClancyCraftItems.WARHAMMER.get(),
+                ClancyCraftItems.HALBERD.get(),
+                ClancyCraftItems.BATTLEAXE.get());
+
+        tag(TinkerTags.Items.MELEE_PRIMARY).add(
+                ClancyCraftItems.KATANA.get(),
+                ClancyCraftItems.WARHAMMER.get(),
+                ClancyCraftItems.HALBERD.get(),
+                ClancyCraftItems.BATTLEAXE.get() );
+
+        tag(TinkerTags.Items.HARVEST).add(
+                ClancyCraftItems.KATANA.get(),
+                ClancyCraftItems.WARHAMMER.get(),
+                ClancyCraftItems.HALBERD.get(),
+                ClancyCraftItems.BATTLEAXE.get());
+
+        tag(TinkerTags.Items.HELD).add(
+                ClancyCraftItems.KATANA.get(),
+                ClancyCraftItems.WARHAMMER.get(),
+                ClancyCraftItems.HALBERD.get(),
+                ClancyCraftItems.BATTLEAXE.get());
+
+        tag(TinkerTags.Items.DURABILITY).add(
+                ClancyCraftItems.KATANA.get(),
+                ClancyCraftItems.WARHAMMER.get(),
+                ClancyCraftItems.HALBERD.get(),
+                ClancyCraftItems.BATTLEAXE.get() );
+
+        tag(TinkerTags.Items.MULTIPART_TOOL).add(
+                ClancyCraftItems.KATANA.get(),
+                ClancyCraftItems.WARHAMMER.get(),
+                ClancyCraftItems.HALBERD.get(),
+                ClancyCraftItems.BATTLEAXE.get()  );
     }
 }
