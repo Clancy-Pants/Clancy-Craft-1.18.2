@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "clancycraft:item/black_metal_chestplate"
+  }
+}
