@@ -15,7 +15,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.library.tools.item.ModifiableItem;
+import slimeknights.tconstruct.tools.TinkerToolParts;
 
 public class ClancyCraftItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -194,6 +196,9 @@ public class ClancyCraftItems {
             () -> new ModifiableItem(TOOL, ModToolDefinitions.HALBERD));
     public static final RegistryObject<ModifiableItem> BATTLEAXE = ITEMS.register("battleaxe",
             () -> new ModifiableItem(TOOL, ModToolDefinitions.BATTLEAXE));
+
+
+
 
 
 
