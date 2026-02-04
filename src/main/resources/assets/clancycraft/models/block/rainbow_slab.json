@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "clancycraft:block/rainbow_planks",
-    "top": "clancycraft:block/rainbow_planks",
-    "side": "clancycraft:block/rainbow_planks"
-  }
-}

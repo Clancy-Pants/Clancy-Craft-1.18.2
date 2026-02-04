@@ -22,6 +22,7 @@ public class ItemModles extends ItemModelProvider {
 
         itemWithModel(ClancyCraftItems.CITRINE, "item/generated");
 
+
         itemWithModel(ClancyCraftItems.RAW_NUGGETIEM, "item/generated");
         itemWithModel(ClancyCraftItems.NUGGETIEM_NUGGET, "item/generated");
         itemWithModel(ClancyCraftItems.NUGGETIEM_INGOT, "item/generated");

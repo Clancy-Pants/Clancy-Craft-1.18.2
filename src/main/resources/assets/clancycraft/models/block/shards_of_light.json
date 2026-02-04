@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "clancycraft:block/shards_of_light"
-  }
-}

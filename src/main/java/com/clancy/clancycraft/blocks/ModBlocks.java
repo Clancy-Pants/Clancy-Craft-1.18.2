@@ -22,6 +22,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import slimeknights.tconstruct.smeltery.block.component.SearedBlock;
 
 import java.util.function.Supplier;
 
@@ -178,6 +179,9 @@ public class ModBlocks {
 
 
 
+    public static final RegistryObject<Block> NUGGETIEM_SMELTERY_BLOCK = registerBlock("nuggetiem_smeltery_block",
+            () -> new SearedBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
 
 
 

@@ -11,6 +11,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import slimeknights.tconstruct.common.TinkerTags;
 
 import javax.annotation.Nullable;
 
@@ -88,7 +89,15 @@ public class ClancyCraftBlockTags extends BlockTagsProvider {
         tag(DIAMONDLVL).add(ModBlocks.BLACK_METAL_BLOCK.get());
         tag(DIAMONDLVL).add(ModBlocks.LIGHT_METAL_BLOCK.get());
 
+        tag(TinkerTags.Blocks.SEARED_BLOCKS).add(
+                ModBlocks.NUGGETIEM_SMELTERY_BLOCK.get()
 
+        );
+
+        tag(TinkerTags.Blocks.SMELTERY_WALL).add(
+                ModBlocks.NUGGETIEM_SMELTERY_BLOCK.get()
+
+        );
 
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .add(

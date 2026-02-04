@@ -36,8 +36,10 @@ public class DataGenerator {
             gen.addProvider(new ClancyCraftFluidTags(gen, fileHelper));
             gen.addProvider(new ClancyCraftItemTags(gen, tags, fileHelper));
             gen.addProvider(new ClancyCraftLootTableProvider(gen));
+
         }
         if(event.includeClient()) {
+            gen.addProvider(new ItemModles(gen, fileHelper));
             gen.addProvider(new ModBlockStates(gen, fileHelper));
             gen.addProvider(new ClancyCraftLangEn(gen));
             AbstractMaterialSpriteProvider provider = new MaterialSpriteProvider();
