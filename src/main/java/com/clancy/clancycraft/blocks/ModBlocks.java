@@ -3,6 +3,7 @@ package com.clancy.clancycraft.blocks;
 import com.clancy.clancycraft.ClancyCraft;
 import com.clancy.clancycraft.blocks.custom.ModFlammableRotatedPillarBlock;
 import com.clancy.clancycraft.blocks.custom.PortalBlock;
+import com.clancy.clancycraft.blocks.custom.workstations.ArmorSmithingStationBlock;
 import com.clancy.clancycraft.items.ClancyCraftItems;
 import com.clancy.clancycraft.items.ModCreativeModeTab;
 import com.clancy.clancycraft.world.dimenesion.portals.ModPortalBlock;
@@ -168,6 +169,14 @@ public class ModBlocks {
 
 
 
+    public static final RegistryObject<Block> ARMOR_SMITHING_STATION =
+            BLOCKS.register("armor_smithing_station",
+                    () -> new ArmorSmithingStationBlock(
+                            BlockBehaviour.Properties.of(Material.WOOD)
+                                    .strength(2.5F)
+                                    .sound(SoundType.WOOD)
+                    )
+            );
 
 
 

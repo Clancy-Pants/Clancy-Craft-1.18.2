@@ -1,12 +1,14 @@
 package com.clancy.clancycraft.items;
 
 import com.clancy.clancycraft.ClancyCraft;
+import com.clancy.clancycraft.blocks.ModBlocks;
 import com.clancy.clancycraft.entitys.ModEntityTypes;
 import com.clancy.clancycraft.init.ModToolDefinitions;
 import com.clancy.clancycraft.items.custom.PortalLighter;
 import com.clancy.clancycraft.items.custom.armor.*;
 import com.clancy.clancycraft.items.custom.ModArmorMaterials;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -196,6 +198,13 @@ public class ClancyCraftItems {
 
 
 
+    public static final RegistryObject<Item> ARMOR_SMITHING_STATION_ITEM =
+            ITEMS.register("armor_smithing_station",
+                    () -> new BlockItem(
+                            ModBlocks.ARMOR_SMITHING_STATION.get(),
+                            new Item.Properties().tab(ModCreativeModeTab.CLANCY_TAB)
+                    )
+            );
 
 
 

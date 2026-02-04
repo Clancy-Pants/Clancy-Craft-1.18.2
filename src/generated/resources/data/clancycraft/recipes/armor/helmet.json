@@ -1,0 +1,10 @@
+{
+  "type": "tconstruct:part_builder",
+  "pattern": "plate",
+  "material": {
+    "item": "minecraft:iron_ingot",
+    "count": 4
+  },
+  "result": "clancycraft:iron_armor_plate",
+  "tinker_station": "clancycraft:armor_smithing_station"
+}
