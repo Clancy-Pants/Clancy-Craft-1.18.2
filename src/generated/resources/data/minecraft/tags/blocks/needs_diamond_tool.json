@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "clancycraft:nuggetiem_ore",
+    "clancycraft:nuggetiem_block",
+    "clancycraft:magnite_ore",
+    "clancycraft:magnite_block",
+    "clancycraft:shards_of_light",
+    "clancycraft:light_block",
+    "clancycraft:black_metal_ore",
+    "clancycraft:black_metal_block",
+    "clancycraft:light_metal_block"
+  ]
+}

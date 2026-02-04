@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:dusts/dark",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:dusts/dark"
+  },
+  "result": {
+    "fluid": "clancycraft:dark",
+    "amount": 90
+  },
+  "temperature": 700,
+  "time": 43
+}

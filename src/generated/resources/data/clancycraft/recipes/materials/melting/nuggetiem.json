@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "clancycraft:nuggetiem",
+  "temperature": 700,
+  "result": {
+    "fluid": "clancycraft:nuggetiem",
+    "amount": 90
+  }
+}

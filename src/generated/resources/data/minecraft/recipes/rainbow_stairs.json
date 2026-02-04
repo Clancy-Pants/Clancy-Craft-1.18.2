@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "E  ",
+    "EE ",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "clancycraft:rainbow_planks"
+    }
+  },
+  "result": {
+    "item": "clancycraft:rainbow_stairs",
+    "count": 4
+  }
+}

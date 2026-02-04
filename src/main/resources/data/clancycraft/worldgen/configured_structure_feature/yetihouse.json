@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "clancycraft:yetihouse/start_pool",
+
+    "size": 1
+  },
+
+  "biomes": "#clancycraft:has_structure/yetihouse",
+
+  "adapt_noise": true,
+  "spawn_overrides": {}
+
+
+}

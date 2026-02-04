@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  },
+  "fluid": {
+    "tag": "forge:lightmetal",
+    "amount": 90
+  },
+  "result": "clancycraft:light_metal_ingot",
+  "cooling_time": 57
+}

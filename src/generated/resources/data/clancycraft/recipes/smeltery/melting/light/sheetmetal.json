@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:sheetmetals/light",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:sheetmetals/light"
+  },
+  "result": {
+    "fluid": "clancycraft:light",
+    "amount": 90
+  },
+  "temperature": 700,
+  "time": 57
+}

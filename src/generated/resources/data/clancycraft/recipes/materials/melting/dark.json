@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "clancycraft:dark",
+  "temperature": 700,
+  "result": {
+    "fluid": "clancycraft:dark",
+    "amount": 90
+  }
+}

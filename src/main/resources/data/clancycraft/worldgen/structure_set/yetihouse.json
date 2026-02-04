@@ -1,0 +1,19 @@
+{
+  "structures": [
+    {
+      "structure": "clancycraft:yetihouse",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "salt": 1568749201,
+
+
+    "spacing": 120,
+
+    "separation": 40,
+
+    "type": "minecraft:random_spread"
+  }
+}

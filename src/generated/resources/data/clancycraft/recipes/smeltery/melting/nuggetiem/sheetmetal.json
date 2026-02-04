@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:sheetmetals/nuggetiem",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:sheetmetals/nuggetiem"
+  },
+  "result": {
+    "fluid": "clancycraft:nuggetiem",
+    "amount": 90
+  },
+  "temperature": 700,
+  "time": 57
+}

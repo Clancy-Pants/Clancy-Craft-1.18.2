@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "clancycraft:light",
+  "temperature": 700,
+  "result": {
+    "fluid": "clancycraft:light",
+    "amount": 90
+  }
+}

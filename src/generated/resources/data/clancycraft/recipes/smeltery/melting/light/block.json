@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:storage_blocks/light"
+  },
+  "result": {
+    "fluid": "clancycraft:light",
+    "amount": 810
+  },
+  "temperature": 700,
+  "time": 171
+}

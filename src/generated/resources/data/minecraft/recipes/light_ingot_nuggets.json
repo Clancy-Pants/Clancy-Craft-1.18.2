@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+  "key": {
+    "E": {
+      "item": "clancycraft:light_nugget"
+    }
+  },
+  "result": {
+    "item": "clancycraft:bar_of_light"
+  }
+}

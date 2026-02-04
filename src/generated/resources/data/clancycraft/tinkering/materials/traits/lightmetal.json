@@ -1,0 +1,12 @@
+{
+  "default": [
+    {
+      "name": "tconstruct:necrotic",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:glowing",
+      "level": 1
+    }
+  ]
+}

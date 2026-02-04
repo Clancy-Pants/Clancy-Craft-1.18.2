@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  },
+  "fluid": {
+    "tag": "clancycraft:light",
+    "amount": 90
+  },
+  "result": "clancycraft:bar_of_light",
+  "cooling_time": 57
+}

@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:gears/dark",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:gears/dark"
+  },
+  "result": {
+    "fluid": "clancycraft:dark",
+    "amount": 360
+  },
+  "temperature": 700,
+  "time": 114
+}

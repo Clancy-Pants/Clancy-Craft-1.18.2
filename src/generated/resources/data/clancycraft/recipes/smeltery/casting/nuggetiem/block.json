@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "tag": "clancycraft:nuggetiem",
+    "amount": 810
+  },
+  "result": "clancycraft:nuggetiem_block",
+  "cooling_time": 171
+}

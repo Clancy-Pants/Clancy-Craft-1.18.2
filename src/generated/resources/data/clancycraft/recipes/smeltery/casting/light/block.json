@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "tag": "clancycraft:light",
+    "amount": 810
+  },
+  "result": "clancycraft:light_block",
+  "cooling_time": 171
+}

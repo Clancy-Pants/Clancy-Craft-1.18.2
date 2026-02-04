@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "tag": "clancycraft:dark",
+    "amount": 90
+  },
+  "temperature": 700,
+  "output": "clancycraft:dark"
+}

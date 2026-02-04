@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "minecraft:nuggetiem_boots"
+    ]
+  },
+  "criteria": {
+    "has_nuggetiem_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ingots/nuggetiem"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:nuggetiem_boots"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_nuggetiem_ingot",
+      "has_the_recipe"
+    ]
+  ]
+}

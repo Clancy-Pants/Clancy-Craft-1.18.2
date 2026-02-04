@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clancycraft:rainbow_log"
+    }
+  ],
+  "result": {
+    "item": "clancycraft:rainbow_planks",
+    "count": 4
+  }
+}

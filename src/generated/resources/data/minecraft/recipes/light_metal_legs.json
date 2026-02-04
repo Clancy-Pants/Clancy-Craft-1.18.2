@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EEE",
+    "E E",
+    "E E"
+  ],
+  "key": {
+    "E": {
+      "item": "clancycraft:light_metal_ingot"
+    }
+  },
+  "result": {
+    "item": "clancycraft:light_metal_leggings"
+  }
+}

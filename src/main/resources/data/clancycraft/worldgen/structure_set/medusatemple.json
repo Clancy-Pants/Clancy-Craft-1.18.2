@@ -1,0 +1,19 @@
+{
+  "structures": [
+    {
+      "structure": "clancycraft:medusatemple",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "salt": 1687421369,
+
+
+    "spacing": 120,
+
+    "separation": 40,
+
+    "type": "minecraft:random_spread"
+  }
+}

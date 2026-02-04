@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "clancycraft:bar_of_light"
+    }
+  ],
+  "result": {
+    "item": "clancycraft:light_nugget",
+    "count": 9
+  }
+}

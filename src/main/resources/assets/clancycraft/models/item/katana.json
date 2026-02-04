@@ -1,0 +1,15 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "head":        "clancycraft:item/tool/katana/blade",
+    "handle":      "clancycraft:item/tool/katana/handle",
+    "guard":       "clancycraft:item/tool/katana/guard"
+  },
+  "modifier_roots": [ "tconstruct:item/tool/katana/modifiers/" ],
+  "parts": [
+    { "name": "handle",  "index": 1 },
+    { "name": "head",    "index": 0},
+    { "name": "guard", "index": 2 }
+  ]
+}

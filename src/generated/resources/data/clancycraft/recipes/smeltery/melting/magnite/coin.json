@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:coins/magnite",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:coins/magnite"
+  },
+  "result": {
+    "fluid": "clancycraft:magnite",
+    "amount": 30
+  },
+  "temperature": 700,
+  "time": 38
+}

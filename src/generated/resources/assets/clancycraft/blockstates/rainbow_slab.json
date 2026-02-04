@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "clancycraft:block/rainbow_slab_top"
+    },
+    "type=bottom": {
+      "model": "clancycraft:block/rainbow_slab"
+    },
+    "type=double": {
+      "model": "clancycraft:block/rainbow_planks"
+    }
+  }
+}

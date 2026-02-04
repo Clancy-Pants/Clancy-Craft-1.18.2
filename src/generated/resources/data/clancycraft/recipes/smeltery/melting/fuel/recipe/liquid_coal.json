@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "minecraft:coal"
+  },
+  "result": {
+    "fluid": "clancycraft:liquid_coal",
+    "amount": 250
+  },
+  "temperature": 1000,
+  "time": 30
+}
