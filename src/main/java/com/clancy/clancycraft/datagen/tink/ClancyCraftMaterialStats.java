@@ -9,7 +9,7 @@ import javax.annotation.Nonnull;
 
 import static net.minecraft.world.item.Tiers.*;
 
-public class ClancyCraftMaterialStats extends AbstractMaterialStatsDataProvider {
+public  class ClancyCraftMaterialStats extends AbstractMaterialStatsDataProvider {
 
     public ClancyCraftMaterialStats(DataGenerator gen, AbstractMaterialDataProvider materials) {
         super(gen, materials);

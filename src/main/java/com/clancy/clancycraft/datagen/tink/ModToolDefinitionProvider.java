@@ -11,7 +11,7 @@ import javax.annotation.Nonnull;
 
 import static slimeknights.tconstruct.tools.TinkerToolParts.*;
 
-public class ModToolDefinitionProvider extends AbstractToolDefinitionDataProvider {
+public  class ModToolDefinitionProvider extends AbstractToolDefinitionDataProvider {
     public ModToolDefinitionProvider(DataGenerator generator) {
         super(generator, ClancyCraft.MOD_ID);
     }

@@ -6,7 +6,7 @@ import slimeknights.tconstruct.library.client.data.material.AbstractMaterialSpri
 
 import javax.annotation.Nonnull;
 
-public class ClancyCraftRenderInfo extends AbstractMaterialRenderInfoProvider {
+public  class ClancyCraftRenderInfo extends AbstractMaterialRenderInfoProvider {
 
     public ClancyCraftRenderInfo(DataGenerator gen, AbstractMaterialSpriteProvider spriteProvider) {
         super(gen, spriteProvider);

@@ -7,7 +7,7 @@ import slimeknights.tconstruct.tools.TinkerToolParts;
 
 import javax.annotation.Nonnull;
 
-public class ModToolSlotLayout extends AbstractStationSlotLayoutProvider {
+public  class ModToolSlotLayout extends AbstractStationSlotLayoutProvider {
 
     public ModToolSlotLayout(DataGenerator generator) {
         super(generator);

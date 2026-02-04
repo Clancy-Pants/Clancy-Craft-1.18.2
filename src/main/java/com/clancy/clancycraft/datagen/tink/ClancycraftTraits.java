@@ -8,7 +8,7 @@ import slimeknights.tconstruct.tools.TinkerModifiers;
 
 import javax.annotation.Nonnull;
 
-public class ClancycraftTraits extends AbstractMaterialTraitDataProvider {
+public  class ClancycraftTraits extends AbstractMaterialTraitDataProvider {
 
     public ClancycraftTraits(DataGenerator gen, AbstractMaterialDataProvider materials) {
         super(gen, materials);
