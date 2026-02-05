@@ -32,6 +32,7 @@ public class ModBlockStates extends BlockStateProvider {
         blockWithItem(ModBlocks.LIGHT_METAL_BLOCK);
 
         blockWithItem(ModBlocks.NUGGETIEM_SMELTERY_BLOCK);
+        blockWithItem(ModBlocks.MAGNITE_SMELTERY_BLOCK);
 
         blockWithItem(ModBlocks.NUGGETIEM_ORE);
         blockWithItem(ModBlocks.MAGNITE_ORE);

@@ -183,6 +183,10 @@ public class ModBlocks {
             () -> new SearedBlock(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
 
+    public static final RegistryObject<Block> MAGNITE_SMELTERY_BLOCK = registerBlock("magnite_smeltery_block",
+            () -> new SearedBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(9f).requiresCorrectToolForDrops()), ModCreativeModeTab.CLANCY_TAB);
+
 
 
 

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "clancycraft:nuggetiem_smeltery_block"
+    "clancycraft:nuggetiem_smeltery_block",
+    "clancycraft:magnite_smeltery_block"
   ]
 }

@@ -89,14 +89,18 @@ public class ClancyCraftBlockTags extends BlockTagsProvider {
         tag(DIAMONDLVL).add(ModBlocks.BLACK_METAL_BLOCK.get());
         tag(DIAMONDLVL).add(ModBlocks.LIGHT_METAL_BLOCK.get());
 
+
         tag(TinkerTags.Blocks.SEARED_BLOCKS).add(
                 ModBlocks.NUGGETIEM_SMELTERY_BLOCK.get()
-
         );
-
         tag(TinkerTags.Blocks.SMELTERY_WALL).add(
                 ModBlocks.NUGGETIEM_SMELTERY_BLOCK.get()
-
+        );
+        tag(TinkerTags.Blocks.SEARED_BLOCKS).add(
+                ModBlocks.MAGNITE_SMELTERY_BLOCK.get()
+        );
+        tag(TinkerTags.Blocks.SMELTERY_WALL).add(
+                ModBlocks.MAGNITE_SMELTERY_BLOCK.get()
         );
 
         tag(Tags.Blocks.STORAGE_BLOCKS)
