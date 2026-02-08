@@ -24,6 +24,10 @@ public class ClancyCraftBlockLootTable extends BlockLoot {
 
         this.dropSelf(ModBlocks.NUGGETIEM_SMELTERY_BLOCK.get());
         this.dropSelf(ModBlocks.MAGNITE_SMELTERY_BLOCK.get());
+        this.dropSelf(ModBlocks.LIGHT_SMELTERY_BLOCK.get());
+
+        //this.dropSelf(ModBlocks.ARMOR_SMITHING_STATION.get());
+
 
         //Rainbow tree
         this.dropSelf(ModBlocks.RAINBOW_LOG.get());
