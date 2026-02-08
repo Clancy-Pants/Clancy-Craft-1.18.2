@@ -5,6 +5,7 @@ import com.clancy.clancycraft.entitys.ModEntityTypes;
 import com.clancy.clancycraft.entitys.client.boss.renderer.*;
 import com.clancy.clancycraft.entitys.projectiles.DemonFireRenderer;
 import com.clancy.clancycraft.entitys.projectiles.PoisonArrowRenderer;
+import com.clancy.clancycraft.init.menus.ModMenus;
 import com.clancy.clancycraft.items.ClancyCraftItems;
 import com.clancy.clancycraft.world.biome.ModRegions;
 import com.clancy.clancycraft.world.biome.ModSurfaceRuleData;
@@ -13,6 +14,7 @@ import com.clancy.clancycraft.world.dimenesion.portals.ModPOIS;
 import com.clancy.clancycraft.world.structures.ClancyCraftStructures;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.color.item.ItemColors;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -60,6 +62,7 @@ public class ClancyCraft
         ClancyCraftDimensions.register();
         ModEntityTypes.ENTITY_TYPES.register(eventBus);
         ClancyCraftStructures.register(eventBus);
+        ModMenus.MENUS.register(eventBus);
 
 
 
@@ -86,6 +89,7 @@ public class ClancyCraft
 
 
     private void clientSetup(final FMLClientSetupEvent event) {
+       // MenuScreens.register(ModMenus.ARMOR_SMITHING.get(), ArmorSmithingScreen::new);
 
         //LEAVES
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RAINBOW_LEAVES.get(), RenderType.cutout());

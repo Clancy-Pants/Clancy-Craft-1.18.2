@@ -7,6 +7,10 @@ import com.clancy.clancycraft.init.ModToolDefinitions;
 import com.clancy.clancycraft.items.custom.PortalLighter;
 import com.clancy.clancycraft.items.custom.armor.*;
 import com.clancy.clancycraft.items.custom.ModArmorMaterials;
+import com.clancy.clancycraft.items.custom.armor.tinkers.ArmorBindingItem;
+import com.clancy.clancycraft.items.custom.armor.tinkers.ArmorPlateItem;
+import com.clancy.clancycraft.items.custom.armor.tinkers.HelmetCoreItem;
+import com.clancy.clancycraft.items.custom.armor.tinkers.ModularHelmetItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -199,6 +203,23 @@ public class ClancyCraftItems {
 
 
 
+    public static final RegistryObject<Item> HELMET_CORE =
+            ITEMS.register("helmet_core",
+                    () -> new HelmetCoreItem(new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> ARMOR_PLATE =
+            ITEMS.register("armor_plate",
+                    () -> new ArmorPlateItem(new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> ARMOR_BINDING =
+            ITEMS.register("armor_binding",
+                    () -> new ArmorBindingItem(new Item.Properties().stacksTo(16)));
+
+
+    public static final RegistryObject<Item> MODULAR_HELMET =
+            ITEMS.register("modular_helmet",
+                    () -> new ModularHelmetItem(ModArmorMaterials.MODULAR,
+                            new Item.Properties().stacksTo(1)));
 
 
 
